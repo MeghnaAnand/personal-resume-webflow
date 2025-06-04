@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -12,7 +11,6 @@ import {
   Mail, 
   MapPin, 
   Calendar,
-  Github,
   Globe,
   Award,
   Users,
@@ -414,10 +412,6 @@ const Index = () => {
             <Button size="lg" variant="secondary">
               <Mail className="w-4 h-4 mr-2" />
               Email Me
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
-              <Github className="w-4 h-4 mr-2" />
-              GitHub
             </Button>
             <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
               <Globe className="w-4 h-4 mr-2" />
