@@ -11,7 +11,6 @@ import {
   Mail, 
   MapPin, 
   Calendar,
-  Globe,
   Award,
   Users,
   Database,
@@ -144,19 +143,15 @@ const Index = () => {
       {/* Hero Section */}
       <section className="relative py-20 px-6 text-center bg-gradient-to-r from-blue-600 to-purple-700 text-white">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl font-bold mb-6">QA Specialist & Full-Stack Developer</h1>
+          <h1 className="text-5xl font-bold mb-6">QA Specialist & AI Prompt Designer</h1>
           <p className="text-xl mb-8 opacity-90">
             Experienced IT professional with 4+ years in software quality assurance, 
-            AI prompt design, and full-stack development across enterprise and AI-based systems.
+            AI prompt design, and web development across enterprise and AI-based systems.
           </p>
           <div className="flex justify-center gap-4 mb-8">
             <Badge variant="secondary" className="text-lg px-4 py-2">
               <TestTube className="w-4 h-4 mr-2" />
               QA Specialist
-            </Badge>
-            <Badge variant="secondary" className="text-lg px-4 py-2">
-              <Code className="w-4 h-4 mr-2" />
-              Full-Stack Developer
             </Badge>
             <Badge variant="secondary" className="text-lg px-4 py-2">
               <Brain className="w-4 h-4 mr-2" />
@@ -167,10 +162,6 @@ const Index = () => {
             <Button size="lg" variant="secondary">
               <Mail className="w-4 h-4 mr-2" />
               Contact Me
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
-              <Globe className="w-4 h-4 mr-2" />
-              View Portfolio
             </Button>
           </div>
         </div>
@@ -412,10 +403,6 @@ const Index = () => {
             <Button size="lg" variant="secondary">
               <Mail className="w-4 h-4 mr-2" />
               Email Me
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
-              <Globe className="w-4 h-4 mr-2" />
-              Portfolio
             </Button>
           </div>
         </div>
