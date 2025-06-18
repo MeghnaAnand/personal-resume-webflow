@@ -159,9 +159,11 @@ const Index = () => {
             </Badge>
           </div>
           <div className="flex justify-center gap-4">
-            <Button size="lg" variant="secondary">
-              <Mail className="w-4 h-4 mr-2" />
-              Contact Me
+            <Button size="lg" variant="secondary" asChild>
+              <a href="mailto:meghnaa.anand@gmail.com">
+                <Mail className="w-4 h-4 mr-2" />
+                Contact Me
+              </a>
             </Button>
           </div>
         </div>
@@ -400,9 +402,11 @@ const Index = () => {
             Ready to collaborate on AI, QA, or development projects? Let's discuss how we can work together.
           </p>
           <div className="flex justify-center gap-4">
-            <Button size="lg" variant="secondary">
-              <Mail className="w-4 h-4 mr-2" />
-              Email Me
+            <Button size="lg" variant="secondary" asChild>
+              <a href="mailto:meghnaa.anand@gmail.com">
+                <Mail className="w-4 h-4 mr-2" />
+                Email Me
+              </a>
             </Button>
           </div>
         </div>
