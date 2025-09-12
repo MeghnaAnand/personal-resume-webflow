@@ -183,10 +183,7 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-700 leading-relaxed">
-                  Experienced IT professional with 4+ years of experience in software quality assurance across enterprise, 
-                  retail, and AI-based systems. Proven expertise in IT project management with a strong understanding of 
-                  Agile and SAFe methodologies. Versatile software development experience including web, LLM prompt design, 
-                  and agents. Adept at cross-functional collaboration, test documentation, and process optimization.
+                  Experienced QA professional with 4+ years of experience in software quality assurance across enterprise, retail, and AI-based systems. Adaptable, Collaborator, Curious, striving for a breakthrough after a maternity gap of few years in the field of tech, with experience of internships in various industries in Stockholm across various profiles.
                 </p>
               </CardContent>
             </Card>
