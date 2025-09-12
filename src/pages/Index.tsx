@@ -199,7 +199,7 @@ const Index = () => {
                 <div className="space-y-4">
                   <div>
                     <h4 className="font-semibold mb-2">Community Engagement</h4>
-                    <p className="text-gray-700">Active member of Women in Tech Sweden and prompt engineering forums</p>
+                    <p className="text-gray-700">Active member of Women in Tech, Data & AI Stockholm, and Women in Product</p>
                   </div>
                   <div>
                     <h4 className="font-semibold mb-2">Languages</h4>
