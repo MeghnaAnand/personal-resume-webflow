@@ -85,7 +85,7 @@ const Index = () => {
       role: "Testing and Data Analysis Intern",
       period: "08/2025 – Present",
       responsibilities: [
-        "Developing a testing pipeline that can test and verify data during the development process."
+        "Developing a testing pipeline that can test and verify data during the development process, using databricks."
       ]
     },
     {
