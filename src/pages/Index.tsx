@@ -19,60 +19,84 @@ import {
 
 const Index = () => {
   const skills = {
+    qa: [
+      "HP QC",
+      "Postman", 
+      "Selenium",
+      "Bug Tracking",
+      "Test Automation",
+      "Functional Testing",
+      "Non-functional Testing", 
+      "Regression Testing",
+      "Integration Testing",
+      "Performance Testing",
+      "Exploratory Testing",
+      "User Acceptance Testing",
+      "E2E Testing"
+    ],
     ai: [
+      "Lovable",
+      "Cursor", 
+      "Notion AI",
+      "N8N",
       "Prompt Design for LLM Agents",
-      "Model Context Protocol",
       "AI Avatar Roleplay",
       "AI Output Quality Evaluation",
       "Behavior Analysis",
       "Prompt Optimization"
     ],
-    qa: [
-      "HP QC",
-      "Postman",
-      "Selenium",
-      "Bug Tracking",
-      "Test Automation",
-      "E2E Testing",
-      "SAP Fiori Testing",
-      "Xray",
-      "Test Documentation"
-    ],
     development: [
-      "JavaScript",
-      "PHP",
-      "Python",
       "HTML/CSS",
+      "PHP", 
       "SAP UI5",
+      "JavaScript",
       "jQuery",
-      "TYPO3",
-      "Magento",
+      "Python",
       "SQL",
-      "VBScript"
+      "VBScript",
+      "TYPO3",
+      "Webflow",
+      "Figma"
+    ],
+    analytics: [
+      "Python",
+      "SQL", 
+      "VBScript",
+      "MS-Excel",
+      "Seaborn",
+      "Data Visualization",
+      "Data Analytics"
     ],
     tools: [
       "Asana",
       "GitHub",
-      "Trello",
+      "Trello", 
       "Jira",
       "Confluence",
-      "MS-Excel",
-      "Seaborn",
-      "Webflow",
-      "Figma"
+      "Xray",
+      "Agile Methodologies"
     ]
   };
 
   const experience = [
     {
+      company: "Data & AI Stockholm",
+      location: "Stockholm, Sweden", 
+      role: "Testing and Data Analysis Intern",
+      period: "08/2025 – Present",
+      responsibilities: [
+        "Developing a testing pipeline that can test and verify data during the development process."
+      ]
+    },
+    {
       company: "Fictive Reality",
       location: "Stockholm, Sweden",
-      role: "AI Prompt Designer and Website Designer Intern",
+      role: "AI Prompt Designer and Website Designer Intern", 
       period: "09/2024 – 01/2025",
       responsibilities: [
         "Designed and tailored structured prompts to guide AI Avatar roleplay interactions across customer training in various fields like psychology, sales, conflict handling etc.",
         "Evaluated AI output quality, identified failure patterns, and applied iterative changes to enhance prompt clarity, tone, and coherence.",
-        "Optimized behavior analysis of AI responses to identify system limitations and refined prompts to boost output accuracy and reliability.",
+        "Optimized behavior analysis of AI responses to identify system limitations and refined prompts to boost output accuracy and reliability, while honing skills in UI design and web development.",
         "Collaborated with developers to fine-tune AI outputs and align behaviors with scenario objectives.",
         "Web-based and mobile testing (iOS) of AI Avatars and Scenarios to ensure correct functioning of AI Avatars."
       ]
@@ -81,7 +105,7 @@ const Index = () => {
       company: "Axfood IT AB",
       location: "Stockholm, Sweden",
       role: "Project Management and Automation Intern",
-      period: "09/2023 – 01/2024",
+      period: "09/2023 – 01/2024", 
       responsibilities: [
         "Formulated SAP Fiori test cases, organized and managed them in Xray, and improved communication between teams and management.",
         "Automated manual processes using macros, resulting in improved data validation and operational efficiency for over 70K local data.",
@@ -89,7 +113,35 @@ const Index = () => {
       ]
     },
     {
-      company: "SAP SE",
+      company: "Career Break",
+      location: "Stockholm, Sweden",
+      role: "Maternity Break",
+      period: "01/2021 – 08/2023",
+      responsibilities: [
+        "Career break for personal reasons - maternity leave."
+      ]
+    },
+    {
+      company: "Stockholm Dual Career Network",
+      location: "Stockholm, Sweden", 
+      role: "Event and Communication Volunteer",
+      period: "10/2019 – 11/2020",
+      responsibilities: [
+        "Active member of SDCN, for arranging events and communication as a volunteer."
+      ]
+    },
+    {
+      company: "Pied Tanca Group AB",
+      location: "Stockholm, Sweden",
+      role: "PHP Consultant", 
+      period: "10/2019 – 12/2019",
+      responsibilities: [
+        "Guided clients through the process of migrating their website to a new content management system Magento.",
+        "Wrote custom PHP code to streamline website functionality."
+      ]
+    },
+    {
+      company: "SAP SE", 
       location: "Walldorf, Germany",
       role: "JavaScript Developer Intern",
       period: "03/2018 – 03/2019",
@@ -99,13 +151,16 @@ const Index = () => {
       ]
     },
     {
-      company: "Pied Tanca Group AB",
-      location: "Stockholm, Sweden",
-      role: "PHP Consultant",
-      period: "10/2019 – 12/2019",
+      company: "Offenburg University of Applied Sciences",
+      location: "Offenburg, Germany",
+      role: "Master Thesis: CMS Back-End Developer", 
+      period: "08/2018 – 03/2019",
       responsibilities: [
-        "Guided clients through the process of migrating their website to a new content management system Magento.",
-        "Wrote custom PHP code to streamline website functionality."
+        "Achieved a secure access control system by applying concepts of TYPO3 Ext base and concepts of Model-View-Controller, Object-Oriented Programming, Domain Driven Design and S.O.L.I.D design principles.",
+        "Developed a brand new user-friendly, filter based reliable system from scratch.",
+        "Integrated concepts of context API, backend routing, password hashing and Mail API, CRUD, repositories, model, and domain in TYPO3 via PHP.",
+        "Conducted in-depth research and analysis to solve the existing issue within the university.",
+        "Involved in E2E testing of the application."
       ]
     },
     {
@@ -199,7 +254,7 @@ const Index = () => {
                 <div className="space-y-4">
                   <div>
                     <h4 className="font-semibold mb-2">Community Engagement</h4>
-                    <p className="text-gray-700">Active member of Women in Tech, Data & AI Stockholm, and Women in Product</p>
+                    <p className="text-gray-700">Active member of Women in Tech Sweden, Pink Programming and prompt engineering forums</p>
                   </div>
                   <div>
                     <h4 className="font-semibold mb-2">Languages</h4>
@@ -221,32 +276,13 @@ const Index = () => {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">Technical Skills</h2>
           <Tabs defaultValue="ai" className="w-full">
-            <TabsList className="grid w-full grid-cols-4">
-              <TabsTrigger value="ai">AI & ML</TabsTrigger>
+            <TabsList className="grid w-full grid-cols-5">
               <TabsTrigger value="qa">QA & Testing</TabsTrigger>
+              <TabsTrigger value="ai">AI & ML</TabsTrigger>
               <TabsTrigger value="development">Development</TabsTrigger>
+              <TabsTrigger value="analytics">Analytics</TabsTrigger>
               <TabsTrigger value="tools">Tools & PM</TabsTrigger>
             </TabsList>
-            
-            <TabsContent value="ai" className="mt-6">
-              <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center">
-                    <Brain className="w-5 h-5 mr-2 text-blue-600" />
-                    AI & Machine Learning
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex flex-wrap gap-2">
-                    {skills.ai.map((skill) => (
-                      <Badge key={skill} variant="secondary" className="text-sm">
-                        {skill}
-                      </Badge>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            </TabsContent>
             
             <TabsContent value="qa" className="mt-6">
               <Card>
@@ -259,6 +295,26 @@ const Index = () => {
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
                     {skills.qa.map((skill) => (
+                      <Badge key={skill} variant="secondary" className="text-sm">
+                        {skill}
+                      </Badge>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+            
+            <TabsContent value="ai" className="mt-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center">
+                    <Brain className="w-5 h-5 mr-2 text-blue-600" />
+                    AI & Machine Learning
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-2">
+                    {skills.ai.map((skill) => (
                       <Badge key={skill} variant="secondary" className="text-sm">
                         {skill}
                       </Badge>
@@ -288,11 +344,31 @@ const Index = () => {
               </Card>
             </TabsContent>
             
+            <TabsContent value="analytics" className="mt-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center">
+                    <Database className="w-5 h-5 mr-2 text-orange-600" />
+                    Data Analytics & Visualization
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-2">
+                    {skills.analytics.map((skill) => (
+                      <Badge key={skill} variant="secondary" className="text-sm">
+                        {skill}
+                      </Badge>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+            
             <TabsContent value="tools" className="mt-6">
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center">
-                    <Zap className="w-5 h-5 mr-2 text-orange-600" />
+                    <Zap className="w-5 h-5 mr-2 text-red-600" />
                     Tools & Project Management
                   </CardTitle>
                 </CardHeader>
