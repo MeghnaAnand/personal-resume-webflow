@@ -92,17 +92,20 @@ export default {
     		},
     		fontFamily: {
     			sans: [
-    				'Roboto',
+    				'Montserrat',
     				'ui-sans-serif',
     				'system-ui',
-    				'sans-serif',
-    				'Apple Color Emoji',
-    				'Segoe UI Emoji',
-    				'Segoe UI Symbol',
-    				'Noto Color Emoji'
+    				'-apple-system',
+    				'BlinkMacSystemFont',
+    				'Segoe UI',
+    				'Roboto',
+    				'Helvetica Neue',
+    				'Arial',
+    				'Noto Sans',
+    				'sans-serif'
     			],
     			serif: [
-    				'Playfair Display',
+    				'Cormorant Garamond',
     				'ui-serif',
     				'Georgia',
     				'Cambria',
@@ -111,7 +114,7 @@ export default {
     				'serif'
     			],
     			mono: [
-    				'Roboto Mono',
+    				'IBM Plex Mono',
     				'ui-monospace',
     				'SFMono-Regular',
     				'Menlo',
@@ -121,6 +124,15 @@ export default {
     				'Courier New',
     				'monospace'
     			]
+    		},
+    		boxShadow: {
+    			'2xs': 'var(--shadow-2xs)',
+    			xs: 'var(--shadow-xs)',
+    			sm: 'var(--shadow-sm)',
+    			md: 'var(--shadow-md)',
+    			lg: 'var(--shadow-lg)',
+    			xl: 'var(--shadow-xl)',
+    			'2xl': 'var(--shadow-2xl)'
     		}
     	}
     },
