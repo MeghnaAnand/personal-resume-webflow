@@ -1,26 +1,73 @@
-import { Mail, Phone, Linkedin, Github } from "lucide-react";
+import { Mail, Linkedin } from "lucide-react";
+import { motion } from "framer-motion";
 
 const ContactSection = () => {
   return (
-    <section className="bg-primary text-primary-foreground px-6 py-4">
-      <div className="max-w-[1400px] mx-auto flex items-center justify-center gap-6 flex-wrap text-sm">
-        <span className="font-semibold">📬 Get in touch:</span>
-        <a href="mailto:meghnaa.anand@gmail.com" className="flex items-center gap-1.5 hover:opacity-80 transition-opacity">
-          <Mail className="w-4 h-4" />
-          meghnaa.anand@gmail.com
-        </a>
-        <a href="tel:+46731449235" className="flex items-center gap-1.5 hover:opacity-80 transition-opacity">
-          <Phone className="w-4 h-4" />
-          (+46) 731 449 235
-        </a>
-        <a href="https://www.linkedin.com/in/meghnaa-anand/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:opacity-80 transition-opacity">
-          <Linkedin className="w-4 h-4" />
-          LinkedIn
-        </a>
-        <a href="https://github.com/MeghnaAnand" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:opacity-80 transition-opacity">
-          <Github className="w-4 h-4" />
-          GitHub
-        </a>
+    <section className="py-20 px-6">
+      <div className="max-w-2xl mx-auto text-center">
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-6"
+        >
+          Get In Touch
+        </motion.p>
+
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4, delay: 0.1 }}
+          className="text-3xl font-bold text-foreground mb-4"
+        >
+          Let's connect! 🤝
+        </motion.h2>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4, delay: 0.2 }}
+          className="text-muted-foreground mb-10 text-lg"
+        >
+          Got a project idea or just want to say hi? I'd love to hear from you.
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4, delay: 0.3 }}
+          className="flex flex-wrap justify-center gap-4"
+        >
+          <a
+            href="mailto:meghnaa.anand@gmail.com"
+            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity shadow-sm"
+          >
+            <Mail className="w-4 h-4" />
+            Send an Email
+          </a>
+          <a
+            href="https://www.linkedin.com/in/meghnaa-anand/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-card border border-border text-foreground font-medium hover:bg-muted transition-colors shadow-sm"
+          >
+            <Linkedin className="w-4 h-4" />
+            Connect on LinkedIn
+          </a>
+        </motion.div>
+
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4, delay: 0.5 }}
+          className="mt-16 text-sm text-muted-foreground"
+        >
+          Made with ❤️ by Meghna Anand · {new Date().getFullYear()}
+        </motion.p>
       </div>
     </section>
   );
