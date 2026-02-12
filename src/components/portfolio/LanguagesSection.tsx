@@ -9,10 +9,10 @@ const languages = [
 const LanguagesSection = () => {
   return (
     <section>
-      <h2 className="text-lg font-bold mb-2 text-primary">Languages 🗣️</h2>
-      <div className="flex flex-wrap gap-2">
+      <h2 className="text-sm font-bold mb-1 text-primary">Languages 🗣️</h2>
+      <div className="flex flex-wrap gap-1.5">
         {languages.map((lang) => (
-          <Badge key={lang.name} variant="secondary" className="text-xs px-3 py-1.5">
+          <Badge key={lang.name} variant="secondary" className="text-[11px] px-2 py-1">
             {lang.emoji} {lang.name} — {lang.level}
           </Badge>
         ))}

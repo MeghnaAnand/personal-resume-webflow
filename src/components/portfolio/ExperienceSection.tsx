@@ -74,17 +74,17 @@ const experience = [
 const ExperienceSection = () => {
   return (
     <section>
-      <h2 className="text-lg font-bold mb-2 text-primary">Work Experience 💼</h2>
-      <Accordion type="multiple" className="space-y-1">
+      <h2 className="text-sm font-bold mb-1 text-primary">Work Experience 💼</h2>
+      <Accordion type="multiple" className="space-y-0.5">
         {experience.map((job) => (
-          <AccordionItem key={job.id} value={job.id} className="border rounded-md px-3 bg-card">
-            <AccordionTrigger className="py-2 hover:no-underline">
-              <div className="flex items-center gap-2 text-left text-sm">
+          <AccordionItem key={job.id} value={job.id} className="border rounded-md px-2 bg-card">
+            <AccordionTrigger className="py-1.5 hover:no-underline">
+              <div className="flex items-center gap-1.5 text-left text-xs">
                 <span>{job.emoji}</span>
                 <div>
                   <span className="font-semibold text-foreground">{job.role}</span>
                   <span className="text-muted-foreground"> · {job.company}</span>
-                  <div className="flex items-center gap-2 text-xs text-muted-foreground mt-0.5">
+                  <div className="flex items-center gap-2 text-[10px] text-muted-foreground">
                     <span className="flex items-center gap-0.5"><MapPin className="w-3 h-3" />{job.location}</span>
                     <span className="flex items-center gap-0.5"><Calendar className="w-3 h-3" />{job.period}</span>
                   </div>
@@ -92,9 +92,9 @@ const ExperienceSection = () => {
               </div>
             </AccordionTrigger>
             <AccordionContent>
-              <ul className="space-y-1 pb-1">
+              <ul className="space-y-0.5 pb-0.5">
                 {job.responsibilities.map((resp, idx) => (
-                  <li key={idx} className="flex items-start text-xs text-muted-foreground">
+                  <li key={idx} className="flex items-start text-[11px] text-muted-foreground leading-tight">
                     <span className="w-1 h-1 bg-primary rounded-full mt-1.5 mr-2 flex-shrink-0" />
                     {resp}
                   </li>

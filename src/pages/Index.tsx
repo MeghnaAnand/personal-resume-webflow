@@ -12,14 +12,14 @@ const Index = () => {
     <div className="h-screen w-screen overflow-hidden bg-background flex flex-col">
       <HeroSection />
       <div className="flex-1 min-h-0 overflow-hidden">
-        <div className="h-full max-w-[1400px] mx-auto px-4 py-3 grid grid-cols-12 gap-4">
+        <div className="h-full max-w-[1400px] mx-auto px-3 py-2 grid grid-cols-12 gap-3">
           {/* Left column */}
-          <div className="col-span-7 overflow-y-auto pr-2 space-y-3 scrollbar-thin">
+          <div className="col-span-7 overflow-y-auto pr-2 space-y-2 scrollbar-thin">
             <ExperienceSection />
             <SkillsSection />
           </div>
           {/* Right column */}
-          <div className="col-span-5 overflow-y-auto pl-2 space-y-3 scrollbar-thin">
+          <div className="col-span-5 overflow-y-auto pl-2 space-y-2 scrollbar-thin">
             <ProjectsSection />
             <EducationSection />
             <VolunteeringSection />

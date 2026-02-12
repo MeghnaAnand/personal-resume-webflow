@@ -9,11 +9,11 @@ const HeroSection = () => {
   }, [dark]);
 
   return (
-    <section className="bg-primary text-primary-foreground px-6 py-4">
+    <section className="bg-primary text-primary-foreground px-6 py-2">
       <div className="max-w-[1400px] mx-auto flex items-center justify-between gap-4 flex-wrap">
         <div>
-          <h1 className="text-2xl font-bold tracking-tight">Meghna Anand ✨</h1>
-          <p className="text-sm opacity-90">
+          <h1 className="text-xl font-bold tracking-tight leading-tight">Meghna Anand ✨</h1>
+          <p className="text-xs opacity-90">
             QA Engineer · AI Prompt Designer · Problem Solver 🚀
           </p>
         </div>
