@@ -1,55 +1,45 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 const skillCategories = [
   {
     title: "Testing & Automation 🧪",
-    skills: ["Selenium", "Postman (API)", "Xray", "Jira", "Integration Testing", "E2E Testing", "Regression Testing", "Functional Testing", "UAT", "Performance Testing", "Exploratory Testing"],
+    skills: ["Selenium", "Postman (API)", "Xray", "Jira", "Integration/E2E Testing"],
   },
   {
-    title: "AI & LLM 🤖",
-    skills: ["Prompt Engineering", "Output Validation", "Non-deterministic Testing", "AI Avatar Roleplay", "Behavior Analysis", "Prompt Optimization"],
+    title: "AI/LLM 🤖",
+    skills: ["Prompt Engineering", "Output Validation", "Non-deterministic Testing"],
   },
   {
-    title: "Development 💻",
-    skills: ["JavaScript", "Python", "SQL", "PHP", "HTML/CSS", "jQuery", "SAP UI5", "TYPO3", "Webflow", "Figma"],
+    title: "Backend 💻",
+    skills: ["Python", "SQL", "JSON", "Database Validation"],
   },
   {
-    title: "Tools & Data 🛠️",
-    skills: ["GitHub", "Databricks", "n8n", "Asana", "Confluence", "Trello", "PySpark", "Seaborn", "MS-Excel", "Data Visualization"],
+    title: "Tools 🛠️",
+    skills: ["GitHub", "Databricks", "n8n", "Asana", "Confluence"],
   },
   {
     title: "Soft Skills 💡",
-    skills: ["Creative Thinking", "Structured Problem-Solving", "Communication", "Feedback Loops", "Agile Methodologies", "Cross-team Collaboration"],
+    skills: ["Creative Thinking", "Problem-Solving", "Communication", "Feedback Loops"],
   },
 ];
 
 const SkillsSection = () => {
   return (
-    <section className="py-20 px-6">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-4">Key Skills 🎯</h2>
-        <p className="text-center text-muted-foreground mb-12 text-lg">What I bring to the table</p>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {skillCategories.map((cat) => (
-            <Card key={cat.title} className="hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-border/50">
-              <CardHeader>
-                <CardTitle className="text-lg">{cat.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-2">
-                  {cat.skills.map((skill) => (
-                    <Badge key={skill} variant="secondary" className="text-xs font-medium">
-                      {skill}
-                    </Badge>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+    <aside className="space-y-5">
+      <h2 className="text-xl font-bold mb-4">Key Skills 🎯</h2>
+      {skillCategories.map((cat) => (
+        <div key={cat.title}>
+          <h3 className="text-sm font-semibold text-primary mb-2">{cat.title}</h3>
+          <div className="flex flex-wrap gap-1.5">
+            {cat.skills.map((skill) => (
+              <Badge key={skill} variant="secondary" className="text-xs font-medium">
+                {skill}
+              </Badge>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      ))}
+    </aside>
   );
 };
 

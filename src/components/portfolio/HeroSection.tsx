@@ -1,6 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, Linkedin, MapPin } from "lucide-react";
+import { Mail, Phone, Linkedin, MapPin, Github } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -14,10 +14,10 @@ const HeroSection = () => {
           QA Engineer · AI Prompt Designer · Problem Solver 🚀
         </p>
         <p className="text-lg mb-8 opacity-80 max-w-2xl mx-auto leading-relaxed">
-          Engineer with 4 years building reliable test processes across enterprise and AI systems. 
+          Engineer with 4 years building reliable test processes across enterprise and AI systems.
           I catch issues early, automate smartly, and believe quality is a team effort 🤝
         </p>
-        
+
         <div className="flex flex-wrap justify-center gap-3 mb-8">
           <Badge className="bg-white/20 text-primary-foreground border-white/30 text-sm px-4 py-2 backdrop-blur-sm">
             <MapPin className="w-3.5 h-3.5 mr-1.5" />
@@ -35,13 +35,19 @@ const HeroSection = () => {
           <Button size="lg" variant="outline" className="border-white/30 text-primary-foreground hover:bg-white/10" asChild>
             <a href="tel:+46731449235">
               <Phone className="w-4 h-4 mr-2" />
-              Call Me 📞
+              0731449235 📞
             </a>
           </Button>
           <Button size="lg" variant="outline" className="border-white/30 text-primary-foreground hover:bg-white/10" asChild>
             <a href="https://www.linkedin.com/in/meghnaa-anand/" target="_blank" rel="noopener noreferrer">
               <Linkedin className="w-4 h-4 mr-2" />
               LinkedIn 🔗
+            </a>
+          </Button>
+          <Button size="lg" variant="outline" className="border-white/30 text-primary-foreground hover:bg-white/10" asChild>
+            <a href="https://github.com/MeghnaAnand" target="_blank" rel="noopener noreferrer">
+              <Github className="w-4 h-4 mr-2" />
+              GitHub 🐙
             </a>
           </Button>
         </div>
