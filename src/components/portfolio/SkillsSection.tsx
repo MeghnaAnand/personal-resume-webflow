@@ -6,7 +6,7 @@ const skillCategories = [
   { title: "AI / LLM", emoji: "🤖", skills: ["Prompt Engineering", "Output Validation", "Non-deterministic Testing"] },
   { title: "Backend", emoji: "💻", skills: ["Python", "SQL", "JSON", "Database Validation"] },
   { title: "Tools", emoji: "🛠️", skills: ["GitHub", "Databricks", "n8n", "Asana", "Confluence"] },
-  { title: "Design & Prototyping", emoji: "🎨", skills: ["Figma", "Webflow"] },
+  { title: "Design & Prototyping", emoji: "🎨", skills: ["Figma", "Webflow", "Canva"] },
   { title: "Soft Skills", emoji: "💡", skills: ["Creative Thinking", "Problem-Solving", "Communication"] },
 ];
 
