@@ -18,17 +18,17 @@ const projects = [
 const ProjectsSection = () => {
   return (
     <section>
-      <h2 className="text-sm font-bold mb-1 text-primary">Projects 🔬</h2>
-      <div className="space-y-1.5">
+      <h2 className="text-2xl font-bold mb-4 text-primary">Recent Projects 🔬</h2>
+      <div className="space-y-3">
         {projects.map((project) => (
-          <div key={project.title} className="bg-card rounded-md p-2 border">
-            <h3 className="text-xs font-semibold flex items-center gap-1">
-              <span>{project.emoji}</span>{project.title}
+          <div key={project.title} className="bg-card rounded-lg p-4 border">
+            <h3 className="text-sm font-semibold flex items-center gap-2">
+              <span className="text-lg">{project.emoji}</span>{project.title}
             </h3>
-            <p className="text-[11px] text-muted-foreground mt-0.5">{project.description}</p>
-            <div className="flex flex-wrap gap-1 mt-1">
+            <p className="text-sm text-muted-foreground mt-1">{project.description}</p>
+            <div className="flex flex-wrap gap-1.5 mt-2">
               {project.tags.map((tag) => (
-                <Badge key={tag} variant="secondary" className="text-[10px] px-1.5 py-0.5">{tag}</Badge>
+                <Badge key={tag} variant="secondary" className="text-xs px-2 py-0.5">{tag}</Badge>
               ))}
             </div>
           </div>

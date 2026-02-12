@@ -9,25 +9,25 @@ const HeroSection = () => {
   }, [dark]);
 
   return (
-    <section className="bg-primary text-primary-foreground px-6 py-2">
+    <section className="bg-primary text-primary-foreground px-6 py-6">
       <div className="max-w-[1400px] mx-auto flex items-center justify-between gap-4 flex-wrap">
         <div>
-          <h1 className="text-xl font-bold tracking-tight leading-tight">Meghna Anand ✨</h1>
-          <p className="text-xs opacity-90">
+          <h1 className="text-3xl font-bold tracking-tight">Meghna Anand ✨</h1>
+          <p className="text-base opacity-90 mt-1">
             QA Engineer · AI Prompt Designer · Problem Solver 🚀
           </p>
         </div>
-        <div className="flex items-center gap-3">
-          <span className="flex items-center gap-1 text-xs opacity-90">
-            <MapPin className="w-3 h-3" />
+        <div className="flex items-center gap-4">
+          <span className="flex items-center gap-1.5 text-sm opacity-90">
+            <MapPin className="w-4 h-4" />
             Stockholm, Sweden 🇸🇪
           </span>
           <button
             onClick={() => setDark(!dark)}
-            className="p-1.5 rounded-md bg-primary-foreground/15 hover:bg-primary-foreground/25 transition-colors"
+            className="p-2 rounded-md bg-primary-foreground/15 hover:bg-primary-foreground/25 transition-colors"
             aria-label="Toggle dark mode"
           >
-            {dark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+            {dark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
           </button>
         </div>
       </div>
