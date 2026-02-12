@@ -9,7 +9,7 @@ const experience = [
     role: "QA & AI Strategy",
     company: "PyxisPulse Consulting AB",
     location: "Stockholm",
-    period: "Sep 2024 – Present",
+    period: "Sep 2025 – Present",
     responsibilities: [
       "Managed end-to-end business operations including accounting, billing, payments, and tax compliance",
       "Developed and maintained company website, ensuring brand presence and functionality",
