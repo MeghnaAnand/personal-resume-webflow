@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 
 const volunteering = [
-  { emoji: "📊", org: "Data & AI Stockholm", desc: "Content Creation for Data Engineering project using PySpark data quality pipeline." },
-  { emoji: "🌍", org: "Women in Tech Global Conference® 2026", desc: "Social Media Advocate." },
-  { emoji: "📝", org: "Stockholm Dual Career Network", desc: "Content Creation for websites and monthly newsletters." },
+  { emoji: "📊", org: "Data & AI Stockholm", period: "Aug 2025 – Feb 2026", desc: "Content Creation for Data Engineering project using PySpark data quality pipeline." },
+  { emoji: "🌍", org: "Women in Tech Global Conference® 2026", period: "Feb 2026 – Present", desc: "Social Media Advocate." },
+  { emoji: "📝", org: "Stockholm Dual Career Network", period: "Oct 2019 – Oct 2020", desc: "Content Creation for websites and monthly newsletters." },
 ];
 
 const VolunteeringSection = () => {
@@ -32,6 +32,7 @@ const VolunteeringSection = () => {
               <span className="text-2xl">{v.emoji}</span>
               <div>
                 <h3 className="font-semibold text-foreground mb-1">{v.org}</h3>
+                <p className="text-xs text-muted-foreground mb-1">{v.period}</p>
                 <p className="text-sm text-muted-foreground">{v.desc}</p>
               </div>
             </motion.div>
