@@ -18,7 +18,7 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section className="py-16 px-6">
+    <section className="py-8 px-6">
       <div className="max-w-2xl mx-auto">
         <motion.p
           initial={{ opacity: 0 }}
