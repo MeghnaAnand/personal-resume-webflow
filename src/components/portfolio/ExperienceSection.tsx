@@ -4,7 +4,7 @@ import { MapPin, Calendar } from "lucide-react";
 const experience = [
   {
     emoji: "🏢",
-    role: "IT Consultant",
+    role: "QA & AI Strategy",
     company: "PyxisPulse Consulting",
     location: "Stockholm, Sweden",
     period: "Sep 2024 – Present",
@@ -72,56 +72,46 @@ const experience = [
 
 const ExperienceSection = () => {
   return (
-    <section className="py-20 px-6 bg-muted/30">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-4">Work Experience 💼</h2>
-        <p className="text-center text-muted-foreground mb-12 text-lg">My professional journey so far</p>
-        <div className="relative">
-          {/* Timeline line */}
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-border hidden md:block" />
-          
-          <div className="space-y-8">
-            {experience.map((job, index) => (
-              <div key={index} className="relative md:pl-20">
-                {/* Timeline dot */}
-                <div className="absolute left-6 top-8 w-5 h-5 rounded-full bg-primary border-4 border-background hidden md:block" />
-                
-                <Card className="hover:shadow-xl transition-all duration-300 border-border/50">
-                  <CardHeader>
-                    <div className="flex justify-between items-start flex-wrap gap-2">
-                      <div>
-                        <h3 className="text-xl font-bold text-primary flex items-center gap-2">
-                          <span className="text-2xl">{job.emoji}</span>
-                          {job.role}
-                        </h3>
-                        <p className="text-lg font-semibold text-foreground/80 mt-1">{job.company}</p>
-                        <div className="flex flex-wrap items-center gap-4 text-muted-foreground mt-2 text-sm">
-                          <span className="flex items-center">
-                            <MapPin className="w-3.5 h-3.5 mr-1" />
-                            {job.location}
-                          </span>
-                          <span className="flex items-center">
-                            <Calendar className="w-3.5 h-3.5 mr-1" />
-                            {job.period}
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <ul className="space-y-2">
-                      {job.responsibilities.map((resp, idx) => (
-                        <li key={idx} className="flex items-start text-sm">
-                          <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 mr-3 flex-shrink-0" />
-                          <span className="text-muted-foreground">{resp}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </CardContent>
-                </Card>
-              </div>
-            ))}
-          </div>
+    <section className="pb-12">
+      <h2 className="text-3xl font-bold mb-2">Work Experience 💼</h2>
+      <p className="text-muted-foreground mb-8">My professional journey so far</p>
+      <div className="relative">
+        <div className="absolute left-3 top-0 bottom-0 w-0.5 bg-border hidden md:block" />
+        <div className="space-y-6">
+          {experience.map((job, index) => (
+            <div key={index} className="relative md:pl-10">
+              <div className="absolute left-1 top-6 w-4 h-4 rounded-full bg-primary border-4 border-background hidden md:block" />
+              <Card className="hover:shadow-lg transition-all duration-300 border-border/50">
+                <CardHeader className="pb-2">
+                  <h3 className="text-lg font-bold text-primary flex items-center gap-2">
+                    <span className="text-xl">{job.emoji}</span>
+                    {job.role}
+                  </h3>
+                  <p className="text-base font-semibold text-foreground/80">{job.company}</p>
+                  <div className="flex flex-wrap items-center gap-3 text-muted-foreground text-sm">
+                    <span className="flex items-center">
+                      <MapPin className="w-3.5 h-3.5 mr-1" />
+                      {job.location}
+                    </span>
+                    <span className="flex items-center">
+                      <Calendar className="w-3.5 h-3.5 mr-1" />
+                      {job.period}
+                    </span>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-1.5">
+                    {job.responsibilities.map((resp, idx) => (
+                      <li key={idx} className="flex items-start text-sm">
+                        <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 mr-2 flex-shrink-0" />
+                        <span className="text-muted-foreground">{resp}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
+          ))}
         </div>
       </div>
     </section>
