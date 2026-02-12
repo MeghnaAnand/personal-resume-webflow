@@ -66,9 +66,12 @@ const experience = [
     location: "Bengaluru, India",
     period: "Mar 2012 – Dec 2014",
     responsibilities: [
-      "Designed comprehensive test plans for end-to-end credit card flows (Bank of America)",
-      "Built automated test suites using Selenium, reducing regression cycles by 40%",
-      "Led QA from planning through UAT, achieving zero high/medium production defects",
+      "Designed comprehensive test plans for end-to-end credit card flows (Bank of America), covering functional, integration, and regression testing",
+      "Built automated test suites using Selenium, reducing regression cycles by 40% and improving coverage for critical banking workflows",
+      "Led QA from planning through UAT, achieving zero high/medium production defects through proactive defect prevention",
+      "Maintained and collaborated with clients and developers to streamline testing",
+      "Documentation of lessons learnt test plan and project status and updates",
+      "Automated key test scenarios with Selenium, leading to faster regression cycles and improved test coverage",
     ],
   },
 ];
