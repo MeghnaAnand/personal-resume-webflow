@@ -1,4 +1,4 @@
-import { Mail, Phone, Linkedin, Github, MapPin, Moon, Sun } from "lucide-react";
+import { Mail, Phone, Linkedin, Github, MapPin, Moon, Sun, Download } from "lucide-react";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
@@ -87,6 +87,10 @@ const HeroSection = () => {
             <Github className="w-4 h-4" />
             GitHub
           </a>
+          <button onClick={() => window.print()} className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-card border border-border text-foreground text-sm font-medium hover:bg-muted transition-colors shadow-sm">
+            <Download className="w-4 h-4" />
+            Download PDF
+          </button>
         </motion.div>
       </div>
     </section>
