@@ -9,17 +9,17 @@ import ContactSection from "@/components/portfolio/ContactSection";
 
 const Index = () => {
   return (
-    <div className="h-screen w-screen overflow-hidden bg-background flex flex-col">
+    <div className="min-h-screen bg-background flex flex-col">
       <HeroSection />
-      <div className="flex-1 min-h-0 overflow-hidden">
-        <div className="h-full max-w-[1400px] mx-auto px-3 py-2 grid grid-cols-12 gap-3">
+      <div className="flex-1">
+        <div className="max-w-[1400px] mx-auto px-6 py-8 grid grid-cols-12 gap-8">
           {/* Left column */}
-          <div className="col-span-7 overflow-y-auto pr-2 space-y-2 scrollbar-thin">
+          <div className="col-span-7 space-y-8">
             <ExperienceSection />
             <SkillsSection />
           </div>
           {/* Right column */}
-          <div className="col-span-5 overflow-y-auto pl-2 space-y-2 scrollbar-thin">
+          <div className="col-span-5 space-y-8">
             <ProjectsSection />
             <EducationSection />
             <VolunteeringSection />

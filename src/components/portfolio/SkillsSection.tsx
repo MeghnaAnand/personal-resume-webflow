@@ -11,14 +11,14 @@ const skillCategories = [
 const SkillsSection = () => {
   return (
     <section>
-      <h2 className="text-sm font-bold mb-1 text-primary">Key Skills 🎯</h2>
-      <div className="grid grid-cols-3 gap-1.5">
+      <h2 className="text-2xl font-bold mb-4 text-primary">Key Skills 🎯</h2>
+      <div className="grid grid-cols-2 gap-3">
         {skillCategories.map((cat) => (
-          <div key={cat.title} className="bg-card rounded-md p-1.5 border">
-            <h3 className="text-[10px] font-semibold text-foreground mb-0.5">{cat.title}</h3>
-            <div className="flex flex-wrap gap-1">
+          <div key={cat.title} className="bg-card rounded-lg p-3 border">
+            <h3 className="text-xs font-semibold text-foreground mb-2">{cat.title}</h3>
+            <div className="flex flex-wrap gap-1.5">
               {cat.skills.map((skill) => (
-                <Badge key={skill} variant="secondary" className="text-[10px] px-1.5 py-0.5">
+                <Badge key={skill} variant="secondary" className="text-xs px-2 py-0.5">
                   {skill}
                 </Badge>
               ))}

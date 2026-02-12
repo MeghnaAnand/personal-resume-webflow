@@ -7,14 +7,14 @@ const volunteering = [
 const VolunteeringSection = () => {
   return (
     <section>
-      <h2 className="text-sm font-bold mb-1 text-primary">Volunteering 💛</h2>
-      <div className="space-y-1">
+      <h2 className="text-2xl font-bold mb-4 text-primary">Volunteering 💛</h2>
+      <div className="space-y-2">
         {volunteering.map((v) => (
-          <div key={v.org} className="bg-card rounded-md px-2 py-1.5 border flex items-start gap-1.5">
-            <span className="text-sm">{v.emoji}</span>
+          <div key={v.org} className="bg-card rounded-lg px-4 py-3 border flex items-start gap-3">
+            <span className="text-lg">{v.emoji}</span>
             <div>
-              <h3 className="text-xs font-semibold">{v.org}</h3>
-              <p className="text-[11px] text-muted-foreground">{v.desc}</p>
+              <h3 className="text-sm font-semibold">{v.org}</h3>
+              <p className="text-xs text-muted-foreground mt-0.5">{v.desc}</p>
             </div>
           </div>
         ))}
