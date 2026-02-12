@@ -1,4 +1,5 @@
 import { MapPin, Calendar } from "lucide-react";
+import { motion } from "framer-motion";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const experience = [
@@ -73,37 +74,55 @@ const experience = [
 
 const ExperienceSection = () => {
   return (
-    <section>
-      <h2 className="text-2xl font-bold mb-4 text-primary">Work Experience 💼</h2>
-      <Accordion type="multiple" className="space-y-2">
-        {experience.map((job) => (
-          <AccordionItem key={job.id} value={job.id} className="border rounded-lg px-4 bg-card">
-            <AccordionTrigger className="py-3 hover:no-underline">
-              <div className="flex items-center gap-3 text-left">
-                <span className="text-lg">{job.emoji}</span>
-                <div>
-                  <span className="font-semibold text-foreground text-sm">{job.role}</span>
-                  <span className="text-muted-foreground text-sm"> · {job.company}</span>
-                  <div className="flex items-center gap-3 text-xs text-muted-foreground mt-1">
-                    <span className="flex items-center gap-1"><MapPin className="w-3.5 h-3.5" />{job.location}</span>
-                    <span className="flex items-center gap-1"><Calendar className="w-3.5 h-3.5" />{job.period}</span>
+    <section className="py-16 px-6">
+      <div className="max-w-2xl mx-auto">
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className="text-xs tracking-[0.2em] uppercase text-muted-foreground text-center mb-10"
+        >
+          Work Experience
+        </motion.p>
+
+        <Accordion type="multiple" className="space-y-3">
+          {experience.map((job, index) => (
+            <motion.div
+              key={job.id}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: index * 0.08 }}
+            >
+              <AccordionItem value={job.id} className="border border-border rounded-2xl px-6 bg-card shadow-sm">
+                <AccordionTrigger className="py-5 hover:no-underline">
+                  <div className="flex items-center gap-4 text-left">
+                    <span className="text-2xl">{job.emoji}</span>
+                    <div>
+                      <p className="font-semibold text-foreground">{job.role}</p>
+                      <p className="text-sm text-muted-foreground">{job.company}</p>
+                      <div className="flex items-center gap-3 text-xs text-muted-foreground mt-1">
+                        <span className="flex items-center gap-1"><MapPin className="w-3 h-3" />{job.location}</span>
+                        <span className="flex items-center gap-1"><Calendar className="w-3 h-3" />{job.period}</span>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </AccordionTrigger>
-            <AccordionContent>
-              <ul className="space-y-1.5 pb-2">
-                {job.responsibilities.map((resp, idx) => (
-                  <li key={idx} className="flex items-start text-sm text-muted-foreground">
-                    <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 mr-2 flex-shrink-0" />
-                    {resp}
-                  </li>
-                ))}
-              </ul>
-            </AccordionContent>
-          </AccordionItem>
-        ))}
-      </Accordion>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <ul className="space-y-2 pb-2 pl-12">
+                    {job.responsibilities.map((resp, idx) => (
+                      <li key={idx} className="flex items-start text-sm text-muted-foreground">
+                        <span className="w-1.5 h-1.5 bg-foreground/30 rounded-full mt-2 mr-3 flex-shrink-0" />
+                        {resp}
+                      </li>
+                    ))}
+                  </ul>
+                </AccordionContent>
+              </AccordionItem>
+            </motion.div>
+          ))}
+        </Accordion>
+      </div>
     </section>
   );
 };
