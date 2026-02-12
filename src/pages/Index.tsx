@@ -1,6 +1,6 @@
 import HeroSection from "@/components/portfolio/HeroSection";
-import SkillsSection from "@/components/portfolio/SkillsSection";
 import ExperienceSection from "@/components/portfolio/ExperienceSection";
+import SkillsSection from "@/components/portfolio/SkillsSection";
 import EducationSection from "@/components/portfolio/EducationSection";
 import ProjectsSection from "@/components/portfolio/ProjectsSection";
 import VolunteeringSection from "@/components/portfolio/VolunteeringSection";
@@ -9,19 +9,17 @@ import ContactSection from "@/components/portfolio/ContactSection";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="h-screen w-screen overflow-hidden bg-background flex flex-col">
       <HeroSection />
-      <div className="max-w-7xl mx-auto px-6 py-12">
-        <div className="flex flex-col lg:flex-row gap-10">
-          {/* Skills Sidebar */}
-          <div className="lg:w-64 shrink-0">
-            <div className="lg:sticky lg:top-6">
-              <SkillsSection />
-            </div>
-          </div>
-          {/* Main Content */}
-          <div className="flex-1 min-w-0 space-y-0">
+      <div className="flex-1 min-h-0 overflow-hidden">
+        <div className="h-full max-w-[1400px] mx-auto px-4 py-3 grid grid-cols-12 gap-4">
+          {/* Left column */}
+          <div className="col-span-7 overflow-y-auto pr-2 space-y-3 scrollbar-thin">
             <ExperienceSection />
+            <SkillsSection />
+          </div>
+          {/* Right column */}
+          <div className="col-span-5 overflow-y-auto pl-2 space-y-3 scrollbar-thin">
             <ProjectsSection />
             <EducationSection />
             <VolunteeringSection />
@@ -30,9 +28,6 @@ const Index = () => {
         </div>
       </div>
       <ContactSection />
-      <footer className="py-6 text-center text-muted-foreground text-sm bg-muted/30">
-        <p>Made with ❤️ by Meghna Anand · {new Date().getFullYear()}</p>
-      </footer>
     </div>
   );
 };
