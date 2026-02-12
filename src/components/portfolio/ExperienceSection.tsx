@@ -7,7 +7,7 @@ const experience = [
     id: "pyxis",
     emoji: "🏢",
     role: "QA & AI Strategy",
-    company: "PyxisPulse Consulting",
+    company: "PyxisPulse Consulting AB",
     location: "Stockholm",
     period: "Sep 2024 – Present",
     responsibilities: [
