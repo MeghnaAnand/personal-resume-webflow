@@ -13,6 +13,7 @@ const experience = [
     responsibilities: [
       "Managed end-to-end business operations including accounting, billing, payments, and tax compliance",
       "Developed and maintained company website, ensuring brand presence and functionality",
+      "Drove customer outreach and business growth through strategic networking, lead generation, and client relationship management",
       "Actively expanding technical capabilities in data engineering through Databricks platform and N8N Automation",
     ],
   },
