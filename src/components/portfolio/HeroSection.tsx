@@ -60,7 +60,7 @@ const HeroSection = () => {
           className="bg-card border border-border rounded-2xl p-8 shadow-sm max-w-md mx-auto mb-12"
         >
           <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-3">What I Do</p>
-          <p className="text-xl font-semibold text-foreground">QA Engineer · AI Prompt Designer</p>
+          <p className="text-xl font-semibold text-foreground">QA Engineer · AI Quality · AI Prompt Designer</p>
           <p className="text-muted-foreground mt-2 text-sm">…turning quality into a competitive advantage 🚀</p>
         </motion.div>
 
