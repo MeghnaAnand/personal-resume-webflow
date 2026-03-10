@@ -3,16 +3,25 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    emoji: "⚡",
-    title: "SPARK-DQ-SHIFTLEFT",
-    description: "PySpark data quality pipeline using Spark-Expectations for schema validation and anomaly detection.",
-    tags: ["PySpark", "Data Quality", "Schema Validation"],
+    emoji: "✨",
+    title: "Aura Balance",
+    description: "Hackathon project focused on wellness and balance tracking.",
+    tags: ["Lovable", "Gemini"],
+    link: "https://github.com/august-human/aura-balance",
   },
   {
-    emoji: "🔄",
-    title: "n8n Automation Testing",
-    description: "Built automated agent workflows (n8n), validating multi-step flows and API integrations.",
-    tags: ["n8n", "Automation", "API Testing"],
+    emoji: "🤖",
+    title: "AutomationMind",
+    description: "Built at SheBuilds Hackathon — an automation-focused app with full-stack capabilities.",
+    tags: ["Lovable", "Lovable Cloud", "Supabase"],
+    link: "https://github.com/MeghnaAnand/logic-loom-78",
+  },
+  {
+    emoji: "🧍",
+    title: "Posture App",
+    description: "Posture tracking application leveraging AI and cloud services.",
+    tags: ["Antigravity", "Gemini CLI", "Google Cloud"],
+    link: "https://github.com/MeghnaAnand/posture-app",
   },
 ];
 
