@@ -46,16 +46,18 @@ const ProjectsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
-              className="bg-card border border-border rounded-2xl p-6 shadow-sm"
+              className="bg-card border border-border rounded-2xl p-6 shadow-sm hover:border-primary/30 transition-colors"
             >
-              <span className="text-3xl mb-4 block">{project.emoji}</span>
-              <h3 className="text-lg font-semibold text-foreground mb-2">{project.title}</h3>
-              <p className="text-sm text-muted-foreground mb-4 leading-relaxed">{project.description}</p>
-              <div className="flex flex-wrap gap-1.5">
-                {project.tags.map((tag) => (
-                  <Badge key={tag} variant="secondary" className="text-xs font-normal">{tag}</Badge>
-                ))}
-              </div>
+              <a href={project.link} target="_blank" rel="noopener noreferrer" className="block">
+                <span className="text-3xl mb-4 block">{project.emoji}</span>
+                <h3 className="text-lg font-semibold text-foreground mb-2">{project.title}</h3>
+                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">{project.description}</p>
+                <div className="flex flex-wrap gap-1.5">
+                  {project.tags.map((tag) => (
+                    <Badge key={tag} variant="secondary" className="text-xs font-normal">{tag}</Badge>
+                  ))}
+                </div>
+              </a>
             </motion.div>
           ))}
         </div>
