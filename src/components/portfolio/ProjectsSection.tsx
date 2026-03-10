@@ -3,16 +3,25 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    emoji: "⚡",
-    title: "SPARK-DQ-SHIFTLEFT",
-    description: "PySpark data quality pipeline using Spark-Expectations for schema validation and anomaly detection.",
-    tags: ["PySpark", "Data Quality", "Schema Validation"],
+    emoji: "✨",
+    title: "Aura Balance",
+    description: "Hackathon project focused on wellness and balance tracking.",
+    tags: ["Lovable", "Gemini"],
+    link: "https://github.com/august-human/aura-balance",
   },
   {
-    emoji: "🔄",
-    title: "n8n Automation Testing",
-    description: "Built automated agent workflows (n8n), validating multi-step flows and API integrations.",
-    tags: ["n8n", "Automation", "API Testing"],
+    emoji: "🤖",
+    title: "AutomationMind",
+    description: "Built at SheBuilds Hackathon — an automation-focused app with full-stack capabilities.",
+    tags: ["Lovable", "Lovable Cloud", "Supabase"],
+    link: "https://github.com/MeghnaAnand/logic-loom-78",
+  },
+  {
+    emoji: "🧍",
+    title: "Posture App",
+    description: "Posture tracking application leveraging AI and cloud services.",
+    tags: ["Antigravity", "Gemini CLI", "Google Cloud"],
+    link: "https://github.com/MeghnaAnand/posture-app",
   },
 ];
 
@@ -29,7 +38,7 @@ const ProjectsSection = () => {
           Recent Projects
         </motion.p>
 
-        <div className="grid md:grid-cols-2 gap-4">
+        <div className="grid md:grid-cols-3 gap-4">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}
@@ -37,16 +46,18 @@ const ProjectsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
-              className="bg-card border border-border rounded-2xl p-6 shadow-sm"
+              className="bg-card border border-border rounded-2xl p-6 shadow-sm hover:border-primary/30 transition-colors"
             >
-              <span className="text-3xl mb-4 block">{project.emoji}</span>
-              <h3 className="text-lg font-semibold text-foreground mb-2">{project.title}</h3>
-              <p className="text-sm text-muted-foreground mb-4 leading-relaxed">{project.description}</p>
-              <div className="flex flex-wrap gap-1.5">
-                {project.tags.map((tag) => (
-                  <Badge key={tag} variant="secondary" className="text-xs font-normal">{tag}</Badge>
-                ))}
-              </div>
+              <a href={project.link} target="_blank" rel="noopener noreferrer" className="block">
+                <span className="text-3xl mb-4 block">{project.emoji}</span>
+                <h3 className="text-lg font-semibold text-foreground mb-2">{project.title}</h3>
+                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">{project.description}</p>
+                <div className="flex flex-wrap gap-1.5">
+                  {project.tags.map((tag) => (
+                    <Badge key={tag} variant="secondary" className="text-xs font-normal">{tag}</Badge>
+                  ))}
+                </div>
+              </a>
             </motion.div>
           ))}
         </div>
