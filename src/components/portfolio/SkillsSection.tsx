@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const skillCategories = [
   { title: "Testing & Automation", emoji: "🧪", skills: ["Selenium", "Postman (API)", "Xray", "Jira", "E2E Testing"] },
-  { title: "AI / LLM", emoji: "🤖", skills: ["Prompt Engineering", "Output Validation", "Non-deterministic Testing"] },
+  
   { title: "Backend", emoji: "💻", skills: ["Python", "SQL", "JSON", "Database Validation"] },
   { title: "Tools", emoji: "🛠️", skills: ["GitHub", "Databricks", "n8n", "Asana", "Confluence"] },
   { title: "Design & Prototyping", emoji: "🎨", skills: ["Figma", "Webflow", "Canva"] },
