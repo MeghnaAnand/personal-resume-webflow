@@ -12,7 +12,7 @@ const HeroSection = () => {
   return (
     <section className="relative pt-12 pb-20 px-4 sm:px-6">
       {/* Dark mode toggle */}
-      <div className="absolute top-6 right-8">
+      <div className="absolute top-4 right-4 sm:top-6 sm:right-8">
         <button
           onClick={() => setDark(!dark)}
           className="p-2.5 rounded-full bg-card border border-border hover:bg-muted transition-colors shadow-sm"
