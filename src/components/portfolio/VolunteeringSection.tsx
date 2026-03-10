@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const volunteering = [
   { emoji: "📊", org: "Data & AI Stockholm", period: "Aug 2025 – Feb 2026", desc: ["Content coordination for Data Engineering project using PySpark data quality pipeline", "Speaker outreach for meetups and community events", "Community building and engagement initiatives"] },
   { emoji: "🌍", org: "Women in Tech Global Conference® 2026", period: "Feb 2026 – Present", desc: ["Social Media Advocate."] },
-  { emoji: "📝", org: "Stockholm Dual Career Network", period: "Oct 2019 – Oct 2020", desc: ["Content Creation for websites and monthly newsletters."] },
+  { emoji: "📝", org: "Stockholm Dual Career Network", period: "Oct 2019 – Oct 2020", desc: ["Content Creation for websites and monthly newsletters", "Community building"] },
 ];
 
 const VolunteeringSection = () => {
