@@ -98,7 +98,7 @@ const ExperienceSection = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.08 }}
             >
-              <AccordionItem value={job.id} className="border border-border rounded-2xl px-6 bg-card shadow-sm">
+              <AccordionItem value={job.id} className="border border-border rounded-2xl px-4 sm:px-6 bg-card shadow-sm">
                 <AccordionTrigger className="py-5 hover:no-underline">
                   <div className="flex items-center gap-4 text-left">
                     <span className="text-2xl">{job.emoji}</span>
