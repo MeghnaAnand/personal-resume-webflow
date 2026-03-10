@@ -38,7 +38,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-foreground"
+          className="text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-6 text-foreground"
         >
           Meghna Anand 👋
         </motion.h1>
