@@ -23,6 +23,13 @@ const projects = [
     tags: ["Antigravity", "Gemini CLI", "Google Cloud"],
     link: "https://github.com/MeghnaAnand/posture-app",
   },
+  {
+    emoji: "⚡",
+    title: "Spark DQ Checks",
+    description: "PySpark data quality pipeline for schema validation and anomaly detection.",
+    tags: ["Databricks", "Cursor", "Claude", "Python"],
+    link: "https://github.com/data-ai-stockholm/spark-dq-checks",
+  },
 ];
 
 const ProjectsSection = () => {
