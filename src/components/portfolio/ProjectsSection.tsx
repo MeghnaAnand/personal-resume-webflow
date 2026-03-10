@@ -45,7 +45,7 @@ const ProjectsSection = () => {
           Recent Projects
         </motion.p>
 
-        <div className="grid md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}
