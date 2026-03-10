@@ -113,7 +113,7 @@ const ExperienceSection = () => {
                   </div>
                 </AccordionTrigger>
                 <AccordionContent>
-                  <ul className="space-y-2 pb-2 pl-12">
+                  <ul className="space-y-2 pb-2 pl-4 sm:pl-12">
                     {job.responsibilities.map((resp, idx) => (
                       <li key={idx} className="flex items-start text-sm text-muted-foreground">
                         <span className="w-1.5 h-1.5 bg-foreground/30 rounded-full mt-2 mr-3 flex-shrink-0" />
