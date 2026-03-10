@@ -23,6 +23,13 @@ const projects = [
     tags: ["Antigravity", "Gemini CLI", "Google Cloud"],
     link: "https://github.com/MeghnaAnand/posture-app",
   },
+  {
+    emoji: "⚡",
+    title: "Spark DQ Checks",
+    description: "PySpark data quality pipeline for schema validation and anomaly detection.",
+    tags: ["Databricks", "Cursor", "Claude", "Python"],
+    link: "https://github.com/data-ai-stockholm/spark-dq-checks",
+  },
 ];
 
 const ProjectsSection = () => {
@@ -38,7 +45,7 @@ const ProjectsSection = () => {
           Recent Projects
         </motion.p>
 
-        <div className="grid md:grid-cols-3 gap-4">
+        <div className="grid md:grid-cols-2 gap-4">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}
