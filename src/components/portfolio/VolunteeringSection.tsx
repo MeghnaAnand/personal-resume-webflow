@@ -33,7 +33,11 @@ const VolunteeringSection = () => {
               <div>
                 <h3 className="font-semibold text-foreground mb-1">{v.org}</h3>
                 <p className="text-xs text-muted-foreground mb-1">{v.period}</p>
-                <p className="text-sm text-muted-foreground">{v.desc}</p>
+                <ul className="text-sm text-muted-foreground list-disc list-inside space-y-0.5">
+                  {v.desc.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
               </div>
             </motion.div>
           ))}
