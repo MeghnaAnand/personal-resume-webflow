@@ -10,7 +10,7 @@ const HeroSection = () => {
   }, [dark]);
 
   return (
-    <section className="relative pt-12 pb-20 px-6">
+    <section className="relative pt-12 pb-20 px-4 sm:px-6">
       {/* Dark mode toggle */}
       <div className="absolute top-6 right-8">
         <button
