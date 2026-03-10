@@ -34,7 +34,7 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section className="py-8 px-6">
+    <section className="py-8 px-4 sm:px-6">
       <div className="max-w-2xl mx-auto">
         <motion.p
           initial={{ opacity: 0 }}
@@ -45,7 +45,7 @@ const ProjectsSection = () => {
           Recent Projects
         </motion.p>
 
-        <div className="grid md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}

@@ -10,9 +10,9 @@ const HeroSection = () => {
   }, [dark]);
 
   return (
-    <section className="relative pt-12 pb-20 px-6">
+    <section className="relative pt-12 pb-20 px-4 sm:px-6">
       {/* Dark mode toggle */}
-      <div className="absolute top-6 right-8">
+      <div className="absolute top-4 right-4 sm:top-6 sm:right-8">
         <button
           onClick={() => setDark(!dark)}
           className="p-2.5 rounded-full bg-card border border-border hover:bg-muted transition-colors shadow-sm"
@@ -38,7 +38,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-foreground"
+          className="text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-6 text-foreground"
         >
           Meghna Anand 👋
         </motion.h1>
@@ -57,7 +57,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="bg-card border border-border rounded-2xl p-8 shadow-sm max-w-md mx-auto mb-12"
+          className="bg-card border border-border rounded-2xl p-6 sm:p-8 shadow-sm max-w-md mx-auto mb-12"
         >
           <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-3">What I Do</p>
           <p className="text-xl font-semibold text-foreground">QA Engineer · AI Quality · AI Prompt Designer</p>

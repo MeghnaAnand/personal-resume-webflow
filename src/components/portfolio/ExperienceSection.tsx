@@ -78,7 +78,7 @@ const experience = [
 
 const ExperienceSection = () => {
   return (
-    <section className="py-8 px-6">
+    <section className="py-8 px-4 sm:px-6">
       <div className="max-w-2xl mx-auto">
         <motion.p
           initial={{ opacity: 0 }}
@@ -98,7 +98,7 @@ const ExperienceSection = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.08 }}
             >
-              <AccordionItem value={job.id} className="border border-border rounded-2xl px-6 bg-card shadow-sm">
+              <AccordionItem value={job.id} className="border border-border rounded-2xl px-4 sm:px-6 bg-card shadow-sm">
                 <AccordionTrigger className="py-5 hover:no-underline">
                   <div className="flex items-center gap-4 text-left">
                     <span className="text-2xl">{job.emoji}</span>
@@ -113,7 +113,7 @@ const ExperienceSection = () => {
                   </div>
                 </AccordionTrigger>
                 <AccordionContent>
-                  <ul className="space-y-2 pb-2 pl-12">
+                  <ul className="space-y-2 pb-2 pl-4 sm:pl-12">
                     {job.responsibilities.map((resp, idx) => (
                       <li key={idx} className="flex items-start text-sm text-muted-foreground">
                         <span className="w-1.5 h-1.5 bg-foreground/30 rounded-full mt-2 mr-3 flex-shrink-0" />
