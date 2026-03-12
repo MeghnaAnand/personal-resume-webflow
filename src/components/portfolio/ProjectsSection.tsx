@@ -58,7 +58,13 @@ const ProjectsSection = () => {
               <a href={project.link} target="_blank" rel="noopener noreferrer" className="block">
                 <span className="text-3xl mb-4 block">{project.emoji}</span>
                 <h3 className="text-lg font-semibold text-foreground mb-2">{project.title}</h3>
-                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">{project.description}</p>
+                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                  {project.title === "AutomationMind" ? (
+                    <><span className="font-semibold text-foreground">Second prize winner in SheBuilds Buildathon</span> — an automation-focused app with full-stack capabilities.</>
+                  ) : (
+                    project.description
+                  )}
+                </p>
                 <div className="flex flex-wrap gap-1.5">
                   {project.tags.map((tag) => (
                     <Badge key={tag} variant="secondary" className="text-xs font-normal">{tag}</Badge>
