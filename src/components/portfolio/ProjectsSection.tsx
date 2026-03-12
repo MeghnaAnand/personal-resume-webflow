@@ -12,7 +12,7 @@ const projects = [
   {
     emoji: "🤖",
     title: "AutomationMind",
-    description: "Built at SheBuilds Hackathon — an automation-focused app with full-stack capabilities.",
+    description: "Second prize winner in SheBuilds Buildathon — an automation-focused app with full-stack capabilities.",
     tags: ["Lovable", "Lovable Cloud", "Supabase"],
     link: "https://github.com/MeghnaAnand/logic-loom-78",
   },
