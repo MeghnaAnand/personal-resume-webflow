@@ -2,12 +2,12 @@ import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
 
 const skillCategories = [
-  { title: "Testing & Automation", emoji: "🧪", skills: ["Selenium", "Postman (API)", "Xray", "Jira", "E2E Testing"] },
-  
+  { title: "Testing", emoji: "🧪", skills: ["Selenium", "Postman (API)", "Xray", "Jira", "Integration/E2E Testing", "Asana", "GitLab Pipelines"] },
   { title: "Backend", emoji: "💻", skills: ["Python", "SQL", "JSON", "Database Validation"] },
-  { title: "Tools", emoji: "🛠️", skills: ["GitHub", "Databricks", "n8n", "Asana", "Confluence"] },
-  { title: "Design & Prototyping", emoji: "🎨", skills: ["Figma", "Webflow", "Canva"] },
-  { title: "Soft Skills", emoji: "💡", skills: ["Creative Thinking", "Problem-Solving", "Communication"] },
+  { title: "Development AI Tools", emoji: "🤖", skills: ["Claude Code", "Antigravity", "Gemini CLI", "Databricks"] },
+  { title: "Automation Tools", emoji: "⚙️", skills: ["n8n", "Notion"] },
+  { title: "Design & Prototype", emoji: "🎨", skills: ["Lovable", "Figma", "WebFlow", "Canva"] },
+  { title: "Soft Skills", emoji: "💡", skills: ["Creative Thinking", "Structured Problem-Solving", "Communication", "Feedback Loops"] },
 ];
 
 const SkillsSection = () => {
