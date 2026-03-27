@@ -8,7 +8,7 @@ const volunteering = [
 
 const VolunteeringSection = () => {
   return (
-    <section id="volunteering" className="py-8 px-4 sm:px-6 scroll-mt-16">
+    <section className="py-8 px-4 sm:px-6">
       <div className="max-w-2xl mx-auto">
         <motion.p
           initial={{ opacity: 0 }}
