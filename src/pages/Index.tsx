@@ -1,4 +1,5 @@
 import HeroSection from "@/components/portfolio/HeroSection";
+import NavBar from "@/components/portfolio/NavBar";
 import ExperienceSection from "@/components/portfolio/ExperienceSection";
 import SkillsSection from "@/components/portfolio/SkillsSection";
 import EducationSection from "@/components/portfolio/EducationSection";
