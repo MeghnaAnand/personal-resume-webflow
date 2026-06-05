@@ -52,7 +52,7 @@ const RecognitionSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: index * 0.08 }}
-                className="bg-card border border-border rounded-2xl p-5 shadow-sm hover:border-primary/40 transition-colors flex items-start gap-3"
+                className="glass rounded-2xl p-5 hover:shadow-glow transition-all flex items-start gap-3"
               >
                 <div className="p-2 rounded-xl bg-primary/10 text-primary flex-shrink-0">
                   <Icon className="w-4 h-4" />

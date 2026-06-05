@@ -27,7 +27,7 @@ const LanguagesSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
-              className="bg-card border border-border rounded-2xl p-6 shadow-sm text-center"
+              className="glass rounded-2xl p-6 shadow-sm text-center"
             >
               <span className="text-3xl mb-3 block">{lang.emoji}</span>
               <p className="font-semibold text-foreground">{lang.name}</p>
