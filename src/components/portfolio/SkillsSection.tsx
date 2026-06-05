@@ -2,12 +2,11 @@ import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
 
 const skillCategories = [
-  { title: "Testing", emoji: "🧪", skills: ["Selenium", "Postman (API)", "Xray", "Jira", "Integration/E2E Testing", "Asana", "GitLab Pipelines"] },
-  { title: "Backend", emoji: "💻", skills: ["Python", "SQL", "JSON", "Database Validation"] },
-  { title: "Development AI Tools", emoji: "🤖", skills: ["Claude Code", "Antigravity", "Gemini CLI", "Databricks"] },
-  { title: "Automation Tools", emoji: "⚙️", skills: ["n8n", "Notion"] },
-  { title: "Design & Prototype", emoji: "🎨", skills: ["Lovable", "Figma", "WebFlow", "Canva"] },
-  { title: "Soft Skills", emoji: "💡", skills: ["Creative Thinking", "Structured Problem-Solving", "Communication", "Feedback Loops"] },
+  { title: "AI & Automation", emoji: "🤖", skills: ["n8n (L1 & L2 certified)", "Flvent AI Fluency", "Automated workflows", "LLM evaluation", "Prompt engineering", "Rapid prototyping"] },
+  { title: "Data & APIs", emoji: "📊", skills: ["Python", "SQL", "PySpark", "Databricks", "JSON", "Data validation pipelines"] },
+  { title: "Testing & Validation", emoji: "🧪", skills: ["AI workflow testing", "Integration & E2E testing", "Selenium", "Jira", "Xray", "Asana"] },
+  { title: "Dev & Tooling", emoji: "⚙️", skills: ["GitLab CI/CD", "JavaScript", "Claude Code", "Gemini CLI", "Lovable", "Webflow", "Figma"] },
+  { title: "Soft Skills", emoji: "💡", skills: ["Cross-functional collaboration", "Demos & workshops", "Stakeholder communication", "Fast learner", "Curious", "Pragmatic"] },
 ];
 
 const SkillsSection = () => {
