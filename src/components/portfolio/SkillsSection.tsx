@@ -1,4 +1,3 @@
-import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
 
 const skillCategories = [
@@ -17,12 +16,12 @@ const SkillsSection = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="text-xs tracking-[0.2em] uppercase text-muted-foreground text-center mb-6"
+          className="text-xs tracking-[0.2em] uppercase text-muted-foreground text-center mb-4"
         >
           Key Skills
         </motion.p>
 
-        <div className="space-y-3">
+        <div className="space-y-2">
           {skillCategories.map((cat, index) => (
             <motion.div
               key={cat.title}
@@ -30,19 +29,15 @@ const SkillsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.3, delay: index * 0.05 }}
-              className="flex items-start gap-3 glass-soft rounded-xl px-4 py-3"
+              className="glass-soft rounded-xl px-4 py-2.5"
             >
-              <span className="text-lg leading-none mt-0.5">{cat.emoji}</span>
-              <div className="flex-1 min-w-0">
-                <h3 className="text-xs font-semibold text-muted-foreground mb-1.5">{cat.title}</h3>
-                <div className="flex flex-wrap gap-1.5">
-                  {cat.skills.map((skill) => (
-                    <Badge key={skill} variant="secondary" className="text-xs font-normal px-2 py-0.5">
-                      {skill}
-                    </Badge>
-                  ))}
-                </div>
+              <div className="flex items-center gap-2 mb-1">
+                <span className="text-base leading-none">{cat.emoji}</span>
+                <h3 className="text-xs font-semibold text-muted-foreground uppercase tracking-wide">{cat.title}</h3>
               </div>
+              <p className="text-sm text-foreground leading-relaxed">
+                {cat.skills.join("  ·  ")}
+              </p>
             </motion.div>
           ))}
         </div>
