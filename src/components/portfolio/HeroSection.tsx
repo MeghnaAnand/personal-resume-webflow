@@ -38,7 +38,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight mb-6"
+          className="text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-4"
         >
           <span className="text-gradient">Meghna Anand</span> <span className="text-foreground">👋</span>
         </motion.h1>
@@ -47,7 +47,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-lg text-muted-foreground leading-relaxed mb-10 max-w-lg mx-auto"
+          className="text-base text-muted-foreground leading-relaxed mb-6 max-w-lg mx-auto"
         >
           I build automations and AI workflows that replace repetitive work — backed by a QA engineer's instinct for what breaks. n8n certified, NVIDIA Inception selected, and shipping real AI products.
         </motion.p>
@@ -57,11 +57,11 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="glass aurora-ring rounded-2xl p-6 sm:p-8 max-w-md mx-auto mb-8"
+          className="glass aurora-ring rounded-2xl p-4 sm:p-5 max-w-md mx-auto mb-5"
         >
-          <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-3">What I Do</p>
-          <p className="text-xl font-semibold text-foreground">AI Automation · Prompt Engineering · AI Quality</p>
-          <p className="text-muted-foreground mt-2 text-sm">n8n · Claude Code · Gemini CLI · PySpark · Databricks 🤖</p>
+          <p className="text-[10px] tracking-[0.2em] uppercase text-muted-foreground mb-2">What I Do</p>
+          <p className="text-base font-semibold text-foreground">AI Automation · Prompt Engineering · AI Quality</p>
+          <p className="text-muted-foreground mt-1 text-xs">n8n · Claude Code · Gemini CLI · PySpark · Databricks 🤖</p>
         </motion.div>
 
         {/* Quick stats */}
@@ -69,7 +69,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.35 }}
-          className="grid grid-cols-3 gap-2 max-w-md mx-auto mb-12"
+          className="grid grid-cols-3 gap-2 max-w-md mx-auto mb-6"
         >
           {[
             { num: "4+", label: "Years in tech" },
