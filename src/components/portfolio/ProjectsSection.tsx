@@ -54,7 +54,7 @@ const ProjectsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
-              className="bg-card border border-border rounded-2xl p-6 shadow-sm hover:border-primary/30 transition-colors"
+              className="glass rounded-2xl p-6 hover:shadow-glow transition-all"
             >
               <a href={project.link} target="_blank" rel="noopener noreferrer" className="block">
                 <div className="flex items-start justify-between mb-3">

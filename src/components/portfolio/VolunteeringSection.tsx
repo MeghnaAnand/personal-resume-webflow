@@ -27,7 +27,7 @@ const VolunteeringSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
-              className="bg-card border border-border rounded-2xl p-6 shadow-sm flex items-start gap-4"
+              className="glass rounded-2xl p-6 shadow-sm flex items-start gap-4"
             >
               <span className="text-2xl">{v.emoji}</span>
               <div>

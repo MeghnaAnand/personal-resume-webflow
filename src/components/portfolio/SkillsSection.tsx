@@ -30,7 +30,7 @@ const SkillsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.3, delay: index * 0.05 }}
-              className="flex items-start gap-3 bg-card border border-border rounded-xl px-4 py-3"
+              className="flex items-start gap-3 glass-soft rounded-xl px-4 py-3"
             >
               <span className="text-lg leading-none mt-0.5">{cat.emoji}</span>
               <div className="flex-1 min-w-0">

@@ -38,9 +38,9 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-6 text-foreground"
+          className="text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight mb-6"
         >
-          Meghna Anand 👋
+          <span className="text-gradient">Meghna Anand</span> <span className="text-foreground">👋</span>
         </motion.h1>
 
         <motion.p
@@ -57,7 +57,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="bg-card border border-border rounded-2xl p-6 sm:p-8 shadow-sm max-w-md mx-auto mb-8"
+          className="glass aurora-ring rounded-2xl p-6 sm:p-8 max-w-md mx-auto mb-8"
         >
           <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-3">What I Do</p>
           <p className="text-xl font-semibold text-foreground">AI Automation · Prompt Engineering · AI Quality</p>
@@ -76,8 +76,8 @@ const HeroSection = () => {
             { num: "2nd", label: "SheBuilds prize" },
             { num: "70K+", label: "Records automated" },
           ].map((s) => (
-            <div key={s.label} className="bg-card border border-border rounded-xl py-3 px-2 shadow-sm">
-              <p className="text-lg font-bold text-foreground">{s.num}</p>
+            <div key={s.label} className="glass rounded-xl py-3 px-2">
+              <p className="text-lg font-bold text-gradient">{s.num}</p>
               <p className="text-[10px] tracking-wide uppercase text-muted-foreground mt-0.5">{s.label}</p>
             </div>
           ))}

@@ -37,7 +37,7 @@ const EducationSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
-              className="bg-card border border-border rounded-2xl p-6 shadow-sm"
+              className="glass rounded-2xl p-6 shadow-sm"
             >
               <div className="flex items-center gap-3 mb-2">
                 <GraduationCap className="w-5 h-5 text-foreground/60" />
