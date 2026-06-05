@@ -76,8 +76,8 @@ const HeroSection = () => {
             { num: "2nd", label: "SheBuilds prize" },
             { num: "70K+", label: "Records automated" },
           ].map((s) => (
-            <div key={s.label} className="bg-card border border-border rounded-xl py-3 px-2 shadow-sm">
-              <p className="text-lg font-bold text-foreground">{s.num}</p>
+            <div key={s.label} className="glass rounded-xl py-3 px-2">
+              <p className="text-lg font-bold text-gradient">{s.num}</p>
               <p className="text-[10px] tracking-wide uppercase text-muted-foreground mt-0.5">{s.label}</p>
             </div>
           ))}
