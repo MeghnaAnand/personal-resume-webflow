@@ -21,7 +21,7 @@ const ContactSection = () => {
           transition={{ duration: 0.4, delay: 0.1 }}
           className="text-3xl font-bold text-foreground mb-4"
         >
-          Let's connect! 🤝
+          Let's connect
         </motion.h2>
 
         <motion.p
