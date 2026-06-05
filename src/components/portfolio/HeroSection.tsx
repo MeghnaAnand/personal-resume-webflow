@@ -72,7 +72,7 @@ const HeroSection = () => {
           className="grid grid-cols-3 gap-2 max-w-md mx-auto mb-12"
         >
           {[
-            { num: "13+", label: "Years in tech" },
+            { num: "5+", label: "Years in tech" },
             { num: "2nd", label: "SheBuilds prize" },
             { num: "70K+", label: "Records automated" },
           ].map((s) => (
