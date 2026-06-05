@@ -12,13 +12,19 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <HeroSection />
-      <RecognitionSection />
-      <ProjectsSection />
-      <SkillsSection />
-      <ExperienceSection />
-      <EducationSection />
-      <VolunteeringSection />
-      <LanguagesSection />
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <ProjectsSection />
+          <RecognitionSection />
+          <SkillsSection />
+          <ExperienceSection />
+          <EducationSection />
+          <VolunteeringSection />
+          <div className="lg:col-span-2">
+            <LanguagesSection />
+          </div>
+        </div>
+      </div>
       <ContactSection />
     </div>
   );
