@@ -35,13 +35,13 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section className="py-8 px-4 sm:px-6">
-      <div className="max-w-2xl mx-auto">
+    <section className="py-3 px-0">
+      <div className="w-full">
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="text-xs tracking-[0.2em] uppercase text-muted-foreground text-center mb-10"
+          className="text-xs tracking-[0.2em] uppercase text-muted-foreground text-center mb-4"
         >
           Recent Projects
         </motion.p>
