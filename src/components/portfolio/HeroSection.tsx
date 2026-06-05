@@ -15,7 +15,7 @@ const HeroSection = () => {
           className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-card border border-border text-sm text-muted-foreground mb-10 shadow-sm"
         >
           <MapPin className="w-3.5 h-3.5" />
-          Stockholm, Sweden 🇸🇪
+          Stockholm, Sweden
         </motion.div>
 
         <motion.h1
@@ -45,7 +45,7 @@ const HeroSection = () => {
         >
           <p className="text-[10px] tracking-[0.2em] uppercase text-muted-foreground mb-2">What I Do</p>
           <p className="text-base font-semibold text-foreground">AI Automation · Prompt Engineering · AI Quality</p>
-          <p className="text-muted-foreground mt-1 text-xs">n8n · Claude Code · Gemini CLI · PySpark · Databricks 🤖</p>
+          <p className="text-muted-foreground mt-1 text-xs">n8n · Claude Code · Gemini CLI · PySpark · Databricks</p>
         </motion.div>
 
         {/* Quick stats */}
