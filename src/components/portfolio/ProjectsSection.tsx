@@ -3,32 +3,33 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    emoji: "✨",
-    title: "Aura Balance",
-    description: "Hackathon project focused on wellness and balance tracking.",
-    tags: ["Lovable", "Gemini"],
-    link: "https://github.com/august-human/aura-balance",
+    emoji: "🏆",
+    title: "AutomationMind",
+    badge: "2nd Prize · SheBuilds",
+    description: "Gamified automation learning platform — built and shipped end-to-end within the hackathon window.",
+    tags: ["Lovable", "React", "Lovable Cloud"],
+    link: "https://github.com/MeghnaAnand/logic-loom-78",
   },
   {
-    emoji: "🤖",
-    title: "AutomationMind",
-    description: "Second prize winner in SheBuilds Buildathon — an automation-focused app with full-stack capabilities.",
-    tags: ["Lovable", "Lovable Cloud", "Supabase"],
-    link: "https://github.com/MeghnaAnand/logic-loom-78",
+    emoji: "⚡",
+    title: "SPARK-DQ-ShiftLeft",
+    description: "PySpark + Spark-Expectations data quality pipeline on Swedish crime statistics (1950–2023). Published under Data & AI Stockholm's GitHub org.",
+    tags: ["PySpark", "Databricks", "Python", "Spark-Expectations"],
+    link: "https://github.com/data-ai-stockholm/spark-dq-checks",
   },
   {
     emoji: "🧍",
     title: "Posture App",
-    description: "Posture tracking application leveraging AI and cloud services.",
+    description: "Real-time posture monitoring app that scores user posture and prompts corrections to encourage healthier habits.",
     tags: ["Antigravity", "Gemini CLI", "Google Cloud"],
     link: "https://github.com/MeghnaAnand/posture-app",
   },
   {
-    emoji: "⚡",
-    title: "Spark DQ Checks",
-    description: "PySpark data quality pipeline for schema validation and anomaly detection.",
-    tags: ["Databricks", "Cursor", "Claude", "Python"],
-    link: "https://github.com/data-ai-stockholm/spark-dq-checks",
+    emoji: "✨",
+    title: "Aura Balance",
+    description: "Hackathon project focused on wellness and balance tracking with an AI-assisted interface.",
+    tags: ["Lovable", "Gemini"],
+    link: "https://github.com/august-human/aura-balance",
   },
 ];
 
@@ -56,15 +57,16 @@ const ProjectsSection = () => {
               className="bg-card border border-border rounded-2xl p-6 shadow-sm hover:border-primary/30 transition-colors"
             >
               <a href={project.link} target="_blank" rel="noopener noreferrer" className="block">
-                <span className="text-3xl mb-4 block">{project.emoji}</span>
-                <h3 className="text-lg font-semibold text-foreground mb-2">{project.title}</h3>
-                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-                  {project.title === "AutomationMind" ? (
-                    <><span className="font-semibold text-foreground">Second prize winner in SheBuilds Buildathon</span> — an automation-focused app with full-stack capabilities.</>
-                  ) : (
-                    project.description
+                <div className="flex items-start justify-between mb-3">
+                  <span className="text-3xl block">{project.emoji}</span>
+                  {project.badge && (
+                    <Badge className="bg-primary/10 text-primary border-primary/20 text-[10px] font-semibold uppercase tracking-wide">
+                      {project.badge}
+                    </Badge>
                   )}
-                </p>
+                </div>
+                <h3 className="text-lg font-semibold text-foreground mb-2">{project.title}</h3>
+                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">{project.description}</p>
                 <div className="flex flex-wrap gap-1.5">
                   {project.tags.map((tag) => (
                     <Badge key={tag} variant="secondary" className="text-xs font-normal">{tag}</Badge>

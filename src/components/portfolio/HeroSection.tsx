@@ -49,7 +49,7 @@ const HeroSection = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-lg text-muted-foreground leading-relaxed mb-10 max-w-lg mx-auto"
         >
-          Engineer with 4+ years building reliable test processes across enterprise and AI systems. I catch issues early, automate smartly, and believe quality is a team effort.
+          I build automations and AI workflows that replace repetitive work — backed by a QA engineer's instinct for what breaks. n8n certified, NVIDIA Inception selected, and shipping real AI products.
         </motion.p>
 
         {/* Who am I card */}
@@ -57,11 +57,30 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="bg-card border border-border rounded-2xl p-6 sm:p-8 shadow-sm max-w-md mx-auto mb-12"
+          className="bg-card border border-border rounded-2xl p-6 sm:p-8 shadow-sm max-w-md mx-auto mb-8"
         >
           <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-3">What I Do</p>
-          <p className="text-xl font-semibold text-foreground">QA Engineer · AI Quality · AI Prompt Designer</p>
-          <p className="text-muted-foreground mt-2 text-sm">…turning quality into a competitive advantage 🚀</p>
+          <p className="text-xl font-semibold text-foreground">AI Automation · Prompt Engineering · AI Quality</p>
+          <p className="text-muted-foreground mt-2 text-sm">n8n · Claude Code · Gemini CLI · PySpark · Databricks 🤖</p>
+        </motion.div>
+
+        {/* Quick stats */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.35 }}
+          className="grid grid-cols-3 gap-2 max-w-md mx-auto mb-12"
+        >
+          {[
+            { num: "13+", label: "Years in tech" },
+            { num: "2nd", label: "SheBuilds prize" },
+            { num: "70K+", label: "Records automated" },
+          ].map((s) => (
+            <div key={s.label} className="bg-card border border-border rounded-xl py-3 px-2 shadow-sm">
+              <p className="text-lg font-bold text-foreground">{s.num}</p>
+              <p className="text-[10px] tracking-wide uppercase text-muted-foreground mt-0.5">{s.label}</p>
+            </div>
+          ))}
         </motion.div>
 
         {/* Contact links */}
