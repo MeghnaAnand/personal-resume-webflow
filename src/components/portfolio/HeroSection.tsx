@@ -1,26 +1,10 @@
-import { Mail, Phone, Linkedin, Github, MapPin, Moon, Sun, Download, BookOpen } from "lucide-react";
-import { useEffect, useState } from "react";
+import { Mail, Phone, Linkedin, Github, MapPin, Download, BookOpen } from "lucide-react";
 import { motion } from "framer-motion";
 
 const HeroSection = () => {
-  const [dark, setDark] = useState(false);
-
-  useEffect(() => {
-    document.documentElement.classList.toggle("dark", dark);
-  }, [dark]);
 
   return (
     <section className="relative pt-8 pb-8 px-4 sm:px-6">
-      {/* Dark mode toggle */}
-      <div className="absolute top-4 right-4 sm:top-6 sm:right-8">
-        <button
-          onClick={() => setDark(!dark)}
-          className="p-2.5 rounded-full bg-card border border-border hover:bg-muted transition-colors shadow-sm"
-          aria-label="Toggle dark mode"
-        >
-          {dark ? <Sun className="w-4 h-4 text-foreground" /> : <Moon className="w-4 h-4 text-foreground" />}
-        </button>
-      </div>
 
       <div className="max-w-2xl mx-auto text-center">
         {/* Pill badge */}
