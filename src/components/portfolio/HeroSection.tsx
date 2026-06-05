@@ -40,7 +40,7 @@ const HeroSection = () => {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-4"
         >
-          <span className="text-gradient">Meghna Anand</span> <span className="text-foreground">👋</span>
+          <span className="text-gradient">Meghna Anand</span>
         </motion.h1>
 
         <motion.p
