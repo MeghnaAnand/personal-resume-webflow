@@ -1,49 +1,60 @@
-import { motion } from "framer-motion";
+import EditorialSection from "./EditorialSection";
 
 const volunteering = [
-  { emoji: "📊", org: "Data & AI Stockholm", period: "Aug 2025 – Feb 2026", desc: ["Content coordination for Data Engineering project using PySpark data quality pipeline", "Speaker outreach for meetups and community events", "Community building and engagement initiatives"] },
-  { emoji: "🌍", org: "Women in Tech Global Conference® 2026", period: "Feb 2026 – Present", desc: ["Social Media Advocate."] },
-  { emoji: "📝", org: "Stockholm Dual Career Network", period: "Oct 2019 – Oct 2020", desc: ["Content Creation for websites and monthly newsletters", "Community building"] },
+  {
+    org: "Data & AI Stockholm",
+    period: "Aug 2025 – Feb 2026",
+    desc: [
+      "Content coordination for Data Engineering project using PySpark data quality pipeline",
+      "Speaker outreach for meetups and community events",
+      "Community building and engagement initiatives",
+    ],
+  },
+  {
+    org: "Women in Tech Global Conference® 2026",
+    period: "Feb 2026 – Present",
+    desc: ["Social Media Advocate."],
+  },
+  {
+    org: "Stockholm Dual Career Network",
+    period: "Oct 2019 – Oct 2020",
+    desc: [
+      "Content Creation for websites and monthly newsletters",
+      "Community building",
+    ],
+  },
 ];
 
 const VolunteeringSection = () => {
   return (
-    <section className="py-3 px-0">
-      <div className="w-full">
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="text-xs tracking-[0.2em] uppercase text-muted-foreground text-center mb-4"
-        >
-          Volunteering
-        </motion.p>
-
-        <div className="space-y-4">
-          {volunteering.map((v, index) => (
-            <motion.div
-              key={v.org}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: index * 0.1 }}
-              className="glass rounded-2xl p-6 shadow-sm flex items-start gap-4"
-            >
-              <span className="text-2xl">{v.emoji}</span>
-              <div>
-                <h3 className="font-semibold text-foreground mb-1">{v.org}</h3>
-                <p className="text-xs text-muted-foreground mb-1">{v.period}</p>
-                <ul className="text-sm text-muted-foreground list-disc list-inside space-y-0.5">
-                  {v.desc.map((item, i) => (
-                    <li key={i}>{item}</li>
-                  ))}
-                </ul>
-              </div>
-            </motion.div>
-          ))}
-        </div>
+    <EditorialSection label="Volunteering">
+      <div className="space-y-10">
+        {volunteering.map((v) => (
+          <div
+            key={v.org}
+            className="grid grid-cols-1 md:grid-cols-12 gap-2 md:gap-4"
+          >
+            <span className="md:col-span-4 text-[11px] uppercase tracking-widest text-muted-foreground font-medium pt-1">
+              {v.period}
+            </span>
+            <div className="md:col-span-8">
+              <h3 className="text-lg font-medium text-foreground mb-2">{v.org}</h3>
+              <ul className="space-y-1.5">
+                {v.desc.map((item, i) => (
+                  <li
+                    key={i}
+                    className="flex items-start text-sm text-muted-foreground leading-relaxed"
+                  >
+                    <span className="w-1 h-1 bg-foreground/40 rounded-full mt-2 mr-3 flex-shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        ))}
       </div>
-    </section>
+    </EditorialSection>
   );
 };
 

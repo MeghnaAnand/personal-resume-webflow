@@ -1,29 +1,23 @@
-import { motion } from "framer-motion";
-import { Award, Sparkles, Cloud, GraduationCap, Trophy, Zap } from "lucide-react";
+import EditorialSection from "./EditorialSection";
 
 const recognitions = [
   {
-    icon: Sparkles,
     title: "NVIDIA Inception Program",
     desc: "Selected as an early-stage AI-focused startup building applied AI products.",
   },
   {
-    icon: Cloud,
     title: "AWS Activate",
     desc: "Accepted for cloud infrastructure support powering AI product development.",
   },
   {
-    icon: Trophy,
     title: "2nd Prize · SheBuilds Buildathon",
     desc: "AutomationMind — gamified automation learning platform shipped end-to-end during the hackathon.",
   },
   {
-    icon: Zap,
     title: "n8n Certified · Level 1 & 2",
     desc: "Applied directly to live personal automation projects and workflows.",
   },
   {
-    icon: GraduationCap,
     title: "Flvent AI Fluency Program",
     desc: "Structured training in practical AI adoption, workflow integration, and responsible AI use.",
   },
@@ -31,52 +25,23 @@ const recognitions = [
 
 const RecognitionSection = () => {
   return (
-    <section className="py-3 px-0">
-      <div className="w-full">
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="text-xs tracking-[0.2em] uppercase text-muted-foreground text-center mb-4"
-        >
-          Recognition & Programs
-        </motion.p>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-          {recognitions.map((r, index) => {
-            const Icon = r.icon;
-            return (
-              <motion.div
-                key={r.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: index * 0.08 }}
-                className="glass rounded-2xl p-5 hover:shadow-glow transition-all flex items-start gap-3"
-              >
-                <div className="p-2 rounded-xl bg-primary/10 text-primary flex-shrink-0">
-                  <Icon className="w-4 h-4" />
-                </div>
-                <div className="min-w-0">
-                  <h3 className="font-semibold text-foreground text-sm mb-1">{r.title}</h3>
-                  <p className="text-xs text-muted-foreground leading-relaxed">{r.desc}</p>
-                </div>
-              </motion.div>
-            );
-          })}
-        </div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="mt-4 flex items-center justify-center gap-2 text-xs text-muted-foreground"
-        >
-          <Award className="w-3.5 h-3.5" />
-          Builder's mindset · QA instinct · AI curiosity
-        </motion.div>
-      </div>
-    </section>
+    <EditorialSection label="Recognition & Programs">
+      <ul className="space-y-8">
+        {recognitions.map((r) => (
+          <li key={r.title} className="flex gap-6">
+            <div className="pt-2 flex-shrink-0">
+              <div className="w-1.5 h-1.5 rounded-full bg-foreground/40" />
+            </div>
+            <div>
+              <h4 className="font-medium text-foreground">{r.title}</h4>
+              <p className="text-sm text-muted-foreground mt-1 leading-relaxed max-w-xl">
+                {r.desc}
+              </p>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </EditorialSection>
   );
 };
 
