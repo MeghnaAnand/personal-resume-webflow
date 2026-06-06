@@ -1,75 +1,64 @@
-import { Mail, Linkedin } from "lucide-react";
 import { motion } from "framer-motion";
 
 const ContactSection = () => {
   return (
-    <section className="py-8 px-4 sm:px-6">
-      <div className="max-w-2xl mx-auto text-center">
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-6"
-        >
-          Get In Touch
-        </motion.p>
-
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.4, delay: 0.1 }}
-          className="text-3xl font-bold text-foreground mb-4"
-        >
-          Let's connect
-        </motion.h2>
-
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.4, delay: 0.2 }}
-          className="text-muted-foreground mb-10 text-lg"
-        >
-          Got a project idea or just want to say hi? I'd love to hear from you.
-        </motion.p>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.4, delay: 0.3 }}
-          className="flex flex-wrap justify-center gap-4"
-        >
-          <a
-            href="mailto:meghnaa.anand@gmail.com"
-            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity shadow-sm"
-          >
-            <Mail className="w-4 h-4" />
-            Send an Email
-          </a>
-          <a
-            href="https://www.linkedin.com/in/meghnaa-anand/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-card border border-border text-foreground font-medium hover:bg-muted transition-colors shadow-sm"
-          >
-            <Linkedin className="w-4 h-4" />
-            Connect on LinkedIn
-          </a>
-        </motion.div>
-
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.4, delay: 0.5 }}
-          className="mt-16 text-sm text-muted-foreground"
-        >
-          Made with ❤️ by Meghna Anand · {new Date().getFullYear()}
-        </motion.p>
+    <motion.footer
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+      className="border-t border-border mt-20 md:mt-28 pt-12 pb-16"
+    >
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+        <div className="md:col-span-4">
+          <p className="section-label">Get in touch</p>
+        </div>
+        <div className="md:col-span-8 space-y-6">
+          <h2 className="text-3xl md:text-4xl font-light tracking-tight text-foreground">
+            Let&apos;s <span className="font-medium">connect</span>.
+          </h2>
+          <p className="text-muted-foreground max-w-xl leading-relaxed">
+            Open to QA Engineer, AI Quality, and AI Prompt Designer roles in
+            Stockholm. Reach out — I&apos;d love to hear what you&apos;re building.
+          </p>
+          <div className="flex flex-wrap gap-x-8 gap-y-2 pt-2">
+            <a
+              href="mailto:meghnaa.anand@gmail.com"
+              className="text-sm font-medium text-foreground underline decoration-border underline-offset-8 hover:decoration-foreground transition-colors"
+            >
+              meghnaa.anand@gmail.com
+            </a>
+            <a
+              href="https://www.linkedin.com/in/meghnaa-anand/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium text-foreground underline decoration-border underline-offset-8 hover:decoration-foreground transition-colors"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/MeghnaAnand"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium text-foreground underline decoration-border underline-offset-8 hover:decoration-foreground transition-colors"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://substack.com/@hitlv0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium text-foreground underline decoration-border underline-offset-8 hover:decoration-foreground transition-colors"
+            >
+              Substack
+            </a>
+          </div>
+          <p className="pt-10 text-xs text-muted-foreground">
+            Meghna Anand · Stockholm · {new Date().getFullYear()}
+          </p>
+        </div>
       </div>
-    </section>
+    </motion.footer>
   );
 };
 

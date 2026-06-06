@@ -1,33 +1,33 @@
-import { Badge } from "@/components/ui/badge";
-import { motion } from "framer-motion";
+import EditorialSection from "./EditorialSection";
+import { ArrowUpRight } from "lucide-react";
 
 const projects = [
   {
-    emoji: "🏆",
     title: "AutomationMind",
     badge: "2nd Prize · SheBuilds",
-    description: "Gamified automation learning platform — built and shipped end-to-end within the hackathon window.",
+    description:
+      "Gamified automation learning platform — built and shipped end-to-end within the hackathon window.",
     tags: ["Lovable", "React", "Lovable Cloud"],
     link: "https://github.com/MeghnaAnand/logic-loom-78",
   },
   {
-    emoji: "⚡",
     title: "SPARK-DQ-ShiftLeft",
-    description: "PySpark + Spark-Expectations data quality pipeline on Swedish crime statistics (1950–2023). Published under Data & AI Stockholm's GitHub org.",
+    description:
+      "PySpark + Spark-Expectations data quality pipeline on Swedish crime statistics (1950–2023). Published under Data & AI Stockholm's GitHub org.",
     tags: ["PySpark", "Databricks", "Python", "Spark-Expectations"],
     link: "https://github.com/data-ai-stockholm/spark-dq-checks",
   },
   {
-    emoji: "🧍",
     title: "Posture App",
-    description: "Real-time posture monitoring app that scores user posture and prompts corrections to encourage healthier habits.",
+    description:
+      "Real-time posture monitoring app that scores user posture and prompts corrections to encourage healthier habits.",
     tags: ["Antigravity", "Gemini CLI", "Google Cloud"],
     link: "https://github.com/MeghnaAnand/posture-app",
   },
   {
-    emoji: "✨",
     title: "Aura Balance",
-    description: "Hackathon project focused on wellness and balance tracking with an AI-assisted interface.",
+    description:
+      "Hackathon project focused on wellness and balance tracking with an AI-assisted interface.",
     tags: ["Lovable", "Gemini"],
     link: "https://github.com/august-human/aura-balance",
   },
@@ -35,49 +35,45 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section className="py-3 px-0">
-      <div className="w-full">
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="text-xs tracking-[0.2em] uppercase text-muted-foreground text-center mb-4"
-        >
-          Recent Projects
-        </motion.p>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {projects.map((project, index) => (
-            <motion.div
-              key={project.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: index * 0.1 }}
-              className="glass rounded-2xl p-6 hover:shadow-glow transition-all"
+    <EditorialSection label="Recent Projects">
+      <div className="space-y-12">
+        {projects.map((project) => (
+          <article key={project.title} className="group">
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
             >
-              <a href={project.link} target="_blank" rel="noopener noreferrer" className="block">
-                <div className="flex items-start justify-between mb-3">
-                  <span className="text-3xl block">{project.emoji}</span>
-                  {project.badge && (
-                    <Badge className="bg-primary/10 text-primary border-primary/20 text-[10px] font-semibold uppercase tracking-wide">
-                      {project.badge}
-                    </Badge>
-                  )}
-                </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">{project.title}</h3>
-                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">{project.description}</p>
-                <div className="flex flex-wrap gap-1.5">
-                  {project.tags.map((tag) => (
-                    <Badge key={tag} variant="secondary" className="text-xs font-normal">{tag}</Badge>
-                  ))}
-                </div>
-              </a>
-            </motion.div>
-          ))}
-        </div>
+              <div className="flex items-start justify-between gap-4 mb-3">
+                <h3 className="text-2xl font-medium text-foreground group-hover:text-muted-foreground transition-colors flex items-center gap-2">
+                  {project.title}
+                  <ArrowUpRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+                </h3>
+                {project.badge && (
+                  <span className="text-[10px] px-2.5 py-0.5 border border-border text-muted-foreground rounded-full uppercase tracking-wider whitespace-nowrap">
+                    {project.badge}
+                  </span>
+                )}
+              </div>
+              <p className="text-muted-foreground leading-relaxed mb-4 max-w-xl">
+                {project.description}
+              </p>
+              <div className="flex flex-wrap gap-x-4 gap-y-1">
+                {project.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="text-[11px] uppercase tracking-wider text-muted-foreground"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </a>
+          </article>
+        ))}
       </div>
-    </section>
+    </EditorialSection>
   );
 };
 

@@ -1,11 +1,14 @@
-import { MapPin, Calendar } from "lucide-react";
-import { motion } from "framer-motion";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import EditorialSection from "./EditorialSection";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const experience = [
   {
     id: "pyxis",
-    emoji: "🚀",
     role: "Founder & AI Automation",
     company: "PyxisPulse Consulting AB",
     location: "Stockholm",
@@ -19,7 +22,6 @@ const experience = [
   },
   {
     id: "fictive",
-    emoji: "🤖",
     role: "AI Quality & Prompt Engineer",
     company: "Fictive Reality AB",
     location: "Stockholm",
@@ -33,7 +35,6 @@ const experience = [
   },
   {
     id: "axfood",
-    emoji: "⚡",
     role: "Test & Automation Engineer",
     company: "Axfood IT AB",
     location: "Stockholm",
@@ -46,7 +47,6 @@ const experience = [
   },
   {
     id: "sap",
-    emoji: "💻",
     role: "JavaScript Developer",
     company: "SAP SE",
     location: "Walldorf, Germany",
@@ -59,7 +59,6 @@ const experience = [
   },
   {
     id: "accenture",
-    emoji: "✅",
     role: "Quality Assurance Engineer",
     company: "Accenture",
     location: "Bengaluru, India",
@@ -69,7 +68,6 @@ const experience = [
       "Built automated test suites using Selenium, reducing regression cycles by 40% and improving coverage for critical banking workflows",
       "Led QA from planning through UAT, achieving zero high/medium production defects through proactive defect prevention",
       "Maintained and collaborated with clients and developers to streamline testing",
-      "Documentation of lessons learnt test plan and project status and updates",
       "Automated key test scenarios with Selenium, leading to faster regression cycles and improved test coverage",
     ],
   },
@@ -77,56 +75,46 @@ const experience = [
 
 const ExperienceSection = () => {
   return (
-    <section className="py-3 px-0">
-      <div className="w-full">
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="text-xs tracking-[0.2em] uppercase text-muted-foreground text-center mb-4"
-        >
-          Work Experience
-        </motion.p>
-
-        <Accordion type="multiple" className="space-y-3">
-          {experience.map((job, index) => (
-            <motion.div
-              key={job.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: index * 0.08 }}
-            >
-              <AccordionItem value={job.id} className="border border-border rounded-2xl px-4 sm:px-6 bg-card shadow-sm">
-                <AccordionTrigger className="py-5 hover:no-underline">
-                  <div className="flex items-center gap-4 text-left">
-                    <span className="text-2xl">{job.emoji}</span>
-                    <div>
-                      <p className="font-semibold text-foreground">{job.role}</p>
-                      <p className="text-sm text-muted-foreground">{job.company}</p>
-                      <div className="flex items-center gap-3 text-xs text-muted-foreground mt-1">
-                        <span className="flex items-center gap-1"><MapPin className="w-3 h-3" />{job.location}</span>
-                        <span className="flex items-center gap-1"><Calendar className="w-3 h-3" />{job.period}</span>
-                      </div>
-                    </div>
-                  </div>
-                </AccordionTrigger>
-                <AccordionContent>
-                  <ul className="space-y-2 pb-2 pl-4 sm:pl-12">
-                    {job.responsibilities.map((resp, idx) => (
-                      <li key={idx} className="flex items-start text-sm text-muted-foreground">
-                        <span className="w-1.5 h-1.5 bg-foreground/30 rounded-full mt-2 mr-3 flex-shrink-0" />
-                        {resp}
-                      </li>
-                    ))}
-                  </ul>
-                </AccordionContent>
-              </AccordionItem>
-            </motion.div>
-          ))}
-        </Accordion>
-      </div>
-    </section>
+    <EditorialSection label="Experience">
+      <Accordion type="multiple" className="space-y-0">
+        {experience.map((job, idx) => (
+          <AccordionItem
+            key={job.id}
+            value={job.id}
+            className={`border-0 ${idx === 0 ? "" : "border-t border-border"}`}
+          >
+            <AccordionTrigger className="py-6 hover:no-underline group">
+              <div className="flex-1 text-left grid grid-cols-1 md:grid-cols-12 gap-2 md:gap-4 items-baseline">
+                <span className="md:col-span-4 text-[11px] uppercase tracking-widest text-muted-foreground font-medium">
+                  {job.period}
+                </span>
+                <div className="md:col-span-8">
+                  <h3 className="text-lg font-medium text-foreground">
+                    {job.role}
+                  </h3>
+                  <p className="text-sm text-muted-foreground mt-0.5">
+                    {job.company} · {job.location}
+                  </p>
+                </div>
+              </div>
+            </AccordionTrigger>
+            <AccordionContent>
+              <ul className="space-y-2 pb-4 md:pl-[33%]">
+                {job.responsibilities.map((resp, i) => (
+                  <li
+                    key={i}
+                    className="flex items-start text-sm text-muted-foreground leading-relaxed"
+                  >
+                    <span className="w-1 h-1 bg-foreground/40 rounded-full mt-2 mr-3 flex-shrink-0" />
+                    {resp}
+                  </li>
+                ))}
+              </ul>
+            </AccordionContent>
+          </AccordionItem>
+        ))}
+      </Accordion>
+    </EditorialSection>
   );
 };
 

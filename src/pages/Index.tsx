@@ -11,21 +11,19 @@ import ContactSection from "@/components/portfolio/ContactSection";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <HeroSection />
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-          <ProjectsSection />
-          <RecognitionSection />
-          <SkillsSection />
+      <main className="max-w-4xl mx-auto px-6 md:px-10">
+        <HeroSection />
+        <div className="space-y-0">
           <ExperienceSection />
+          <ProjectsSection />
+          <SkillsSection />
+          <RecognitionSection />
           <EducationSection />
           <VolunteeringSection />
-          <div className="lg:col-span-2">
-            <LanguagesSection />
-          </div>
+          <LanguagesSection />
         </div>
-      </div>
-      <ContactSection />
+        <ContactSection />
+      </main>
     </div>
   );
 };
