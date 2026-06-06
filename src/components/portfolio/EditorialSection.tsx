@@ -12,7 +12,7 @@ const EditorialSection = ({ label, children, first = false }: EditorialSectionPr
     <motion.section
       initial={{ opacity: 0, y: 16 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-80px" }}
+      viewport={{ once: true, amount: 0.05 }}
       transition={{ duration: 0.5 }}
       className={`grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 ${
         first ? "" : "border-t border-border pt-14 md:pt-20"
