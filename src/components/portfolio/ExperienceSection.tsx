@@ -22,7 +22,7 @@ const experience = [
   },
   {
     id: "fictive",
-    role: "AI Quality & Prompt Engineer",
+    role: "AI Quality & Prompt Designer",
     company: "Fictive Reality AB",
     location: "Stockholm",
     period: "Sep 2024 – Jan 2025",
