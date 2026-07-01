@@ -22,7 +22,7 @@ const HeroSection = () => {
         <p className="text-lg md:text-xl font-light text-muted-foreground leading-relaxed max-w-2xl">
           QA Engineer & AI Quality Specialist. I build automations and AI workflows
           that replace repetitive work — backed by a QA engineer&apos;s instinct for
-          what breaks. n8n certified, NVIDIA Inception selected, and shipping real
+          what breaks. n8n certified, hackathon prize winner, and shipping real
           AI products.
         </p>
 
@@ -82,7 +82,7 @@ const HeroSection = () => {
           </div>
           <div>
             <dt className="section-label mb-2">Recognition</dt>
-            <dd className="text-lg font-medium text-foreground">SheBuilds · NVIDIA</dd>
+            <dd className="text-lg font-medium text-foreground">SheBuilds · AWS</dd>
           </div>
           <div>
             <dt className="section-label mb-2">Open to</dt>
