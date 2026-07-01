@@ -2,10 +2,6 @@ import EditorialSection from "./EditorialSection";
 
 const recognitions = [
   {
-    title: "NVIDIA Inception Program",
-    desc: "Selected as an early-stage AI-focused startup building applied AI products.",
-  },
-  {
     title: "AWS Activate",
     desc: "Accepted for cloud infrastructure support powering AI product development.",
   },
