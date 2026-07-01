@@ -17,7 +17,6 @@ const experience = [
       "Used GenAI tools daily (Claude Code, Gemini CLI) to streamline research, automate workflows, and ship personal projects",
       "Built a data quality pipeline (PySpark + Spark-Expectations) on Swedish crime statistics (1950–2023), published under Data & AI Stockholm GitHub — real data, real output, publicly documented",
       "Co-managed business operations (accounting, payments, tax, contracts) while simultaneously building technical AI solutions",
-      "Selected for NVIDIA Inception Program and AWS Activate for early-stage AI product development",
     ],
   },
   {
