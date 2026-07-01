@@ -9,7 +9,7 @@ import {
 const experience = [
   {
     id: "pyxis",
-    role: "Founder & AI Automation",
+    role: "Founder & AI Quality Consultant",
     company: "PyxisPulse Consulting AB",
     location: "Stockholm",
     period: "Sep 2025 – Present",
@@ -22,7 +22,7 @@ const experience = [
   },
   {
     id: "fictive",
-    role: "AI Quality & Prompt Engineer",
+    role: "AI Quality & Prompt Designer",
     company: "Fictive Reality AB",
     location: "Stockholm",
     period: "Sep 2024 – Jan 2025",
@@ -35,7 +35,7 @@ const experience = [
   },
   {
     id: "axfood",
-    role: "Test & Automation Engineer",
+    role: "Test & Automation",
     company: "Axfood IT AB",
     location: "Stockholm",
     period: "Sep 2023 – Jan 2024",

@@ -74,7 +74,7 @@ const HeroSection = () => {
         <dl className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-6 border-t border-border pt-10 mt-4">
           <div>
             <dt className="section-label mb-2">Experience</dt>
-            <dd className="text-lg font-medium text-foreground">4+ years</dd>
+            <dd className="text-lg font-medium text-foreground">5+ years</dd>
           </div>
           <div>
             <dt className="section-label mb-2">Based in</dt>
