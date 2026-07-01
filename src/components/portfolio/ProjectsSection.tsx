@@ -27,8 +27,8 @@ const projects = [
   {
     title: "Valsant",
     description:
-      "Personal AI project — repo details to be added.",
-    tags: ["AI"],
+      "Personal AI project — built and shipped with Lovable.",
+    tags: ["Lovable", "AI", "Lovable Cloud"],
     link: "https://github.com/MeghnaAnand/valsant",
   },
 ];
