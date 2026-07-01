@@ -16,7 +16,7 @@ const HeroSection = () => {
         </div>
 
         <h1 className="text-5xl sm:text-6xl md:text-7xl font-light tracking-tight text-foreground">
-          Meghna <span className="font-medium">Anand</span>
+          Meghna Anand
         </h1>
 
         <p className="text-lg md:text-xl font-light text-muted-foreground leading-relaxed max-w-2xl">
