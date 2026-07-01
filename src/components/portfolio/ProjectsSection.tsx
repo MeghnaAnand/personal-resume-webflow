@@ -18,18 +18,18 @@ const projects = [
     link: "https://github.com/data-ai-stockholm/spark-dq-checks",
   },
   {
-    title: "Posture App",
+    title: "FreshBox Chatbot",
     description:
-      "Real-time posture monitoring app that scores user posture and prompts corrections to encourage healthier habits.",
-    tags: ["Antigravity", "Gemini CLI", "Google Cloud"],
-    link: "https://github.com/MeghnaAnand/posture-app",
+      "FastAPI customer-support chatbot (Ollama / llama3.2) with a scoring endpoint, Playwright UI tests, and an n8n pipeline that auto-evaluates bot responses from Google Sheets into Pass/Fail logs.",
+    tags: ["FastAPI", "Ollama", "Playwright", "n8n"],
+    link: "https://github.com/MeghnaAnand/freshbox-chatbot",
   },
   {
-    title: "Aura Balance",
+    title: "Valsant",
     description:
-      "Hackathon project focused on wellness and balance tracking with an AI-assisted interface.",
-    tags: ["Lovable", "Gemini"],
-    link: "https://github.com/august-human/aura-balance",
+      "Personal AI project — repo details to be added.",
+    tags: ["AI"],
+    link: "https://github.com/MeghnaAnand/valsant",
   },
 ];
 
