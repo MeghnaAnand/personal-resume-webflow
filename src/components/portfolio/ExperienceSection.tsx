@@ -35,7 +35,7 @@ const experience = [
   },
   {
     id: "axfood",
-    role: "Test & Automation Engineer",
+    role: "Test & Automation",
     company: "Axfood IT AB",
     location: "Stockholm",
     period: "Sep 2023 – Jan 2024",
