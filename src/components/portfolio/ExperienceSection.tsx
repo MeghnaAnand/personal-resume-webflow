@@ -9,7 +9,7 @@ import {
 const experience = [
   {
     id: "pyxis",
-    role: "Founder & AI Automation",
+    role: "Founder & AI Quality Consultant",
     company: "PyxisPulse Consulting AB",
     location: "Stockholm",
     period: "Sep 2025 – Present",
