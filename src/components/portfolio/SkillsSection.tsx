@@ -2,6 +2,15 @@ import EditorialSection from "./EditorialSection";
 
 const skillCategories = [
   {
+    title: "AI in Testing",
+    skills: [
+      "LLM evaluation",
+      "AI output analysis",
+      "Prompt engineering",
+      "AI workflow testing",
+    ],
+  },
+  {
     title: "Testing Methods",
     skills: [
       "Functional",
@@ -13,17 +22,6 @@ const skillCategories = [
       "Exploratory",
       "API testing",
       "Manual & automated test scripts",
-    ],
-  },
-  {
-    title: "Test Management & Bug Tracking",
-    skills: [
-      "Jira",
-      "Xray",
-      "HP QC",
-      "Asana",
-      "Test case repository maintenance",
-      "Test reporting",
     ],
   },
   {
@@ -50,12 +48,14 @@ const skillCategories = [
     ],
   },
   {
-    title: "AI in Testing",
+    title: "Test Management & Bug Tracking",
     skills: [
-      "LLM evaluation",
-      "AI output analysis",
-      "Prompt engineering",
-      "AI workflow testing",
+      "Jira",
+      "Xray",
+      "HP QC",
+      "Asana",
+      "Test case repository maintenance",
+      "Test reporting",
     ],
   },
   {
