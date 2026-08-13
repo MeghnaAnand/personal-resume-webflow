@@ -3,23 +3,23 @@ import EditorialSection from "./EditorialSection";
 const volunteering = [
   {
     org: "Data & AI Stockholm",
-    period: "Aug 2025 – Feb 2026",
+    period: "Aug 2025 – Present",
     desc: [
-      "Content coordination for Data Engineering project using PySpark data quality pipeline",
+      "Content Coordinator for a community of ~7,000 members",
       "Speaker outreach for meetups and community events",
-      "Community building and engagement initiatives",
+      "Technical content coordination and community engagement",
     ],
   },
   {
-    org: "Women in Tech Global Conference® 2026",
-    period: "Feb 2026 – Present",
-    desc: ["Social Media Advocate."],
+    org: "Women in Tech Sweden · Women in AI",
+    period: "Active member",
+    desc: ["Mentorship, networking, and knowledge sharing"],
   },
   {
     org: "Stockholm Dual Career Network",
     period: "Oct 2019 – Oct 2020",
     desc: [
-      "Content Creation for websites and monthly newsletters",
+      "Content creation for websites and monthly newsletters",
       "Community building",
     ],
   },
@@ -27,7 +27,7 @@ const volunteering = [
 
 const VolunteeringSection = () => {
   return (
-    <EditorialSection label="Volunteering">
+    <EditorialSection label="Community & Volunteering">
       <div className="space-y-10">
         {volunteering.map((v) => (
           <div

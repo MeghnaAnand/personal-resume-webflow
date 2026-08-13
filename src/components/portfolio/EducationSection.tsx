@@ -3,14 +3,14 @@ import EditorialSection from "./EditorialSection";
 const education = [
   {
     institution: "Offenburg University of Applied Sciences",
-    location: "Germany",
-    degree: "M.Sc. Information Technology",
+    location: "Offenburg, Germany",
+    degree: "MSc, Communication and Media Engineering",
     period: "2016–2019",
   },
   {
-    institution: "Kalinga Institute of Industrial Technology",
-    location: "India",
-    degree: "B.Tech Computer Science & Engineering",
+    institution: "Kalinga Institute of Industrial Technology (KIIT)",
+    location: "Bhubaneswar, India",
+    degree: "BTech, Computer Science & Engineering",
     period: "2008–2012",
   },
 ];

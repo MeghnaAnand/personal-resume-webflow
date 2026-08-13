@@ -1,9 +1,9 @@
 import EditorialSection from "./EditorialSection";
 
 const languages = [
-  { name: "English", level: "Professional" },
+  { name: "English", level: "Fluent" },
   { name: "German", level: "Intermediate" },
-  { name: "Swedish", level: "Beginner" },
+  { name: "Swedish", level: "Beginner · actively learning" },
 ];
 
 const LanguagesSection = () => {
