@@ -20,10 +20,10 @@ const HeroSection = () => {
         </h1>
 
         <p className="text-lg md:text-xl font-light text-muted-foreground leading-relaxed max-w-2xl">
-          QA Engineer & AI Quality Specialist. I bring a structured, quality-first
-          mindset to every stage of development and actively contribute to
-          continuous improvement of testing processes — comfortable in fast-paced
-          Agile environments and experienced using AI in testing workflows.
+          QA Engineer & AI Quality Specialist. I find how systems fail — testing
+          and debugging AI behaviour against expectations, validating data at
+          scale, and building structured evaluation into the development process.
+          Five years across enterprise, retail, and AI products.
         </p>
 
         <div className="flex flex-wrap items-center gap-x-3 gap-y-3 pt-2">
