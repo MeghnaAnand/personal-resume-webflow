@@ -14,8 +14,8 @@ const experience = [
     location: "Stockholm",
     period: "Sep 2025 – Present",
     responsibilities: [
-      "Identifying, evaluating, testing, and deploying AI and automation use-cases — translating business inefficiencies into practical, repeatable workflow solutions using n8n, Python, and AI tooling",
       "Developed a PySpark + Spark-Expectations data quality pipeline on Swedish crime statistics (1950–2023), published under Data & AI Stockholm's GitHub org",
+      "Identifying, evaluating, testing, and deploying AI and automation use-cases — translating business inefficiencies into practical, repeatable workflow solutions using n8n, Python, and AI tooling",
       "Rapidly prototyping with Claude Code, Gemini CLI, and Lovable — testing and iterating fast to validate ideas before committing to full builds, including through hackathons",
       "Managed all business operations end-to-end including accounting, payments, marketing, and tax compliance, bringing the same systems thinking to operations as to product",
     ],
