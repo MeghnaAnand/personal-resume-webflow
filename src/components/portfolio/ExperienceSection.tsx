@@ -64,10 +64,10 @@ const experience = [
     location: "Bengaluru, India",
     period: "Mar 2012 – Dec 2014",
     responsibilities: [
-      "Designed and executed test plans for end-to-end credit card processing flows (Bank of America) across functional, integration, regression, and UAT phases",
-      "Reviewed requirements and functional designs to confirm test readiness, identifying gaps early and preventing rework",
-      "Investigated, debugged, and troubleshot defects with development teams, providing technical advice and timely resolution reports to stakeholders",
       "Built automated test suites using Selenium, reducing regression cycles by 40% and achieving zero high/medium severity production defects",
+      "Reviewed requirements and functional designs to confirm test readiness, identifying gaps early and preventing rework",
+      "Designed and executed test plans for end-to-end credit card processing flows (Bank of America) across functional, integration, regression, and UAT phases",
+      "Investigated, debugged, and troubleshot defects with development teams, providing technical advice and timely resolution reports to stakeholders",
       "Used MySQL for data validation and backend verification during testing phases",
       "Set up and maintained test environments across multiple phases, ensuring stability for high-volume banking workflows",
     ],
