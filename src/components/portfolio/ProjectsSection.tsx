@@ -5,8 +5,8 @@ const projects = [
   {
     title: "LLM Evaluation Suite",
     description:
-      "Repeatable quality framework for AI document summarisation — failure taxonomy, LLM-as-judge scoring, and structured test reporting.",
-    tags: ["LLM evaluation", "Python", "Test reporting"],
+      "Repeatable quality framework for AI document summarisation: a failure taxonomy that names how outputs go wrong, LLM-as-judge scoring against those categories, and structured test reporting so results are comparable run to run.",
+    tags: ["LLM evaluation", "Failure taxonomy", "Python", "Test reporting"],
     link: null as string | null,
   },
   {
