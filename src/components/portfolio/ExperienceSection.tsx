@@ -40,8 +40,8 @@ const experience = [
     location: "Stockholm",
     period: "Sep 2023 – Jan 2024",
     responsibilities: [
-      "Developed and maintained test cases for SAP Fiori enterprise applications in Xray, improving coverage and maintaining the test case repository across critical system workflows",
       "Built VBScript automation scripts to validate 70K+ records, cutting validation time by 60% — adopted as a standard process improvement across the broader team",
+      "Developed and maintained test cases for SAP Fiori enterprise applications in Xray, improving coverage and maintaining the test case repository across critical system workflows",
       "Collaborated with cross-functional teams to embed quality early, proactively identifying integration issues before production",
       "Contributed to sprint planning, stand-ups, and retrospectives in an Agile/Scrum team",
     ],
