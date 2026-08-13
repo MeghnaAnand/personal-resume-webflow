@@ -27,9 +27,9 @@ const experience = [
     location: "Stockholm",
     period: "Sep 2024 – Jan 2025",
     responsibilities: [
-      "Conducted functional, exploratory, and regression testing of AI avatar applications across web and mobile (iOS), documenting and tracking defects through to resolution in Asana",
-      "Executed test cases for AI scenarios across multiple domains, ensuring outputs met both technical specifications and user expectations",
       "Investigated and debugged AI behavior issues, providing technical advice and structured recommendations to the development team",
+      "Executed test cases for AI scenarios across multiple domains, ensuring outputs met both technical specifications and user expectations",
+      "Conducted functional, exploratory, and regression testing of AI avatar applications across web and mobile (iOS), documenting and tracking defects through to resolution in Asana",
       "Worked within an Agile/Scrum team — sprint planning, daily stand-ups, and retrospectives — contributing to quality-first delivery",
     ],
   },
