@@ -3,6 +3,13 @@ import { ArrowUpRight } from "lucide-react";
 
 const projects = [
   {
+    title: "LLM Evaluation Suite",
+    description:
+      "Repeatable quality framework for AI document summarisation — failure taxonomy, LLM-as-judge scoring, and structured test reporting.",
+    tags: ["LLM evaluation", "Python", "Test reporting"],
+    link: null as string | null,
+  },
+  {
     title: "AutomationMind",
     badge: "2nd Prize · SheBuilds",
     description:
@@ -24,31 +31,21 @@ const projects = [
     tags: ["FastAPI", "Ollama", "Playwright", "n8n"],
     link: "https://github.com/MeghnaAnand/freshbox-chatbot",
   },
-  {
-    title: "Valsant",
-    description:
-      "Personal AI project — built and shipped with Lovable.",
-    tags: ["Lovable", "AI", "Lovable Cloud"],
-    link: "https://github.com/MeghnaAnand/valsant",
-  },
 ];
 
 const ProjectsSection = () => {
   return (
-    <EditorialSection label="Recent Projects">
+    <EditorialSection label="Selected Projects">
       <div className="space-y-12">
-        {projects.map((project) => (
-          <article key={project.title} className="group">
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block"
-            >
+        {projects.map((project) => {
+          const Inner = (
+            <>
               <div className="flex items-start justify-between gap-4 mb-3">
                 <h3 className="text-2xl font-medium text-foreground group-hover:text-muted-foreground transition-colors flex items-center gap-2">
                   {project.title}
-                  <ArrowUpRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  {project.link && (
+                    <ArrowUpRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  )}
                 </h3>
                 {project.badge && (
                   <span className="text-[10px] px-2.5 py-0.5 border border-border text-muted-foreground rounded-full uppercase tracking-wider whitespace-nowrap">
@@ -69,9 +66,26 @@ const ProjectsSection = () => {
                   </span>
                 ))}
               </div>
-            </a>
-          </article>
-        ))}
+            </>
+          );
+
+          return (
+            <article key={project.title} className="group">
+              {project.link ? (
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block"
+                >
+                  {Inner}
+                </a>
+              ) : (
+                <div>{Inner}</div>
+              )}
+            </article>
+          );
+        })}
       </div>
     </EditorialSection>
   );
