@@ -2,15 +2,6 @@ import EditorialSection from "./EditorialSection";
 
 const volunteering = [
   {
-    org: "Data & AI Stockholm",
-    period: "Aug 2025 – Present",
-    desc: [
-      "Content Coordinator for a community of ~7,000 members",
-      "Speaker outreach for meetups and community events",
-      "Technical content coordination and community engagement",
-    ],
-  },
-  {
     org: "Women in Tech Sweden · Women in AI",
     period: "Active member",
     desc: ["Mentorship, networking, and knowledge sharing"],

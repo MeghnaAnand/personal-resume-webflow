@@ -20,10 +20,12 @@ const HeroSection = () => {
         </h1>
 
         <p className="text-lg md:text-xl font-light text-muted-foreground leading-relaxed max-w-2xl">
-          QA Engineer & AI Quality Specialist. I find how systems fail — testing
-          and debugging AI behaviour against expectations, validating data at
-          scale, and building structured evaluation into the development process.
-          Five years across enterprise, retail, and AI products.
+          Customer-facing professional with a QA and AI quality background. I work
+          directly with enterprise clients and stakeholders to understand what they
+          need and turn it into clear outcomes — from banking-critical systems at
+          Bank of America to AI product requirements gathered straight from customers.
+          I run my own AI consultancy and use n8n, Python, and AI tooling to create
+          leverage in everyday work.
         </p>
 
         <div className="flex flex-wrap items-center gap-x-3 gap-y-3 pt-2">
@@ -85,8 +87,8 @@ const HeroSection = () => {
             <dd className="text-lg font-medium text-foreground">SheBuilds · AWS</dd>
           </div>
           <div>
-            <dt className="section-label mb-2">Open to</dt>
-            <dd className="text-lg font-medium text-foreground">QA & AI Quality roles</dd>
+            <dt className="section-label mb-2">Work permit</dt>
+            <dd className="text-lg font-medium text-foreground">No sponsorship needed</dd>
           </div>
         </dl>
 
