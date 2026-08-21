@@ -87,8 +87,8 @@ const HeroSection = () => {
             <dd className="text-lg font-medium text-foreground">SheBuilds · AWS</dd>
           </div>
           <div>
-            <dt className="section-label mb-2">Open to</dt>
-            <dd className="text-lg font-medium text-foreground">QA & AI Quality roles</dd>
+            <dt className="section-label mb-2">Work permit</dt>
+            <dd className="text-lg font-medium text-foreground">No sponsorship needed</dd>
           </div>
         </dl>
 
