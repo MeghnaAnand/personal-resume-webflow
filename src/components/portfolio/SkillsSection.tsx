@@ -1,58 +1,13 @@
 import EditorialSection from "./EditorialSection";
 
 const skillCategories = [
-  {
-    title: "User & Product Support",
-    skills: [
-      "Understanding user needs",
-      "Requirements analysis",
-      "Issue investigation & troubleshooting",
-      "Customer feedback handling",
-      "Product validation",
-    ],
-  },
-  {
-    title: "Analysis & Reporting",
-    skills: [
-      "SQL",
-      "Excel",
-      "PySpark",
-      "Pattern identification",
-      "Status reporting",
-    ],
-  },
-  {
-    title: "Communication & Delivery",
-    skills: [
-      "Stakeholder communication",
-      "Cross-functional coordination",
-      "Clear documentation",
-      "Knowledge transfer",
-      "Agile/Scrum",
-    ],
-  },
-  {
-    title: "Quality & Testing",
-    skills: [
-      "Test planning & test cases",
-      "Functional & regression testing",
-      "UAT coordination",
-      "Selenium automation",
-      "AI output evaluation",
-      "Defect tracking (Jira, Xray, Asana)",
-    ],
-  },
-  {
-    title: "AI & Automation Tools",
-    skills: [
-      "Lovable",
-      "Claude Code",
-      "Gemini CLI",
-      "n8n",
-      "Python",
-      "Prompt design",
-    ],
-  },
+  { title: "Testing Methods", skills: ["Functional", "Regression", "System", "Integration", "UAT", "E2E", "API testing", "Manual & automated test scripts"] },
+  { title: "SDLC & STLC", skills: ["Full software development and testing life cycle", "Requirements review", "Test readiness", "Environment setup", "Execution", "Defect lifecycle", "Scrum and sprint testing"] },
+  { title: "Bug Tracking & Test Management", skills: ["Jira", "Xray", "HP QC", "Asana"] },
+  { title: "Automation", skills: ["Selenium", "Python scripting", "GitLab CI/CD pipelines", "n8n workflow automation"] },
+  { title: "Data & APIs", skills: ["Python", "SQL", "PySpark", "Postman (REST APIs)", "JSON", "Databricks"] },
+  { title: "AI & Quality", skills: ["LLM evaluation", "AI output analysis", "Prompt engineering", "Failure mode identification"] },
+  { title: "Soft Skills", skills: ["Analytical", "Detail-oriented", "Ownership", "Structured way of working", "Knowledge sharing", "Team-oriented", "Curious"] },
 ];
 
 const SkillsSection = () => {

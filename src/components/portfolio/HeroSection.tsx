@@ -20,16 +20,17 @@ const HeroSection = () => {
         </h1>
 
         <p className="text-base md:text-lg font-medium tracking-wide text-foreground">
-          QA Engineer · Product Analyst · AI Quality Specialist
+          Software Tester · QA Engineer · AI Quality
         </p>
 
         <p className="text-lg md:text-xl font-light text-muted-foreground leading-relaxed max-w-2xl">
-          Product-minded problem solver with 4+ years across customer-facing quality,
-          software delivery, and AI workflows. I turn user and stakeholder needs into
-          clear requirements, investigate what is not working, and communicate findings
-          so teams can improve products and processes. My experience spans enterprise
-          banking, retail, AI products, community operations, and hands-on work with
-          Lovable, Claude, n8n, Python, and data-quality tools.
+          Software Tester with 4+ years building reliable test processes across enterprise
+          and AI systems — covering functional, regression, integration, system, and UAT
+          from planning through to resolution. I take full ownership of quality throughout
+          the SDLC and STLC, reviewing requirements for test readiness, setting up test
+          environments, and maintaining structured test documentation. I identify potential
+          failure points early, analyze test results clearly, and contribute to continuous
+          improvement of QA processes.
         </p>
 
         <div className="flex flex-wrap items-center gap-x-3 gap-y-3 pt-2">

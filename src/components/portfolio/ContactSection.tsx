@@ -18,7 +18,7 @@ const ContactSection = () => {
             Let&apos;s <span className="font-medium">connect</span>.
           </h2>
           <p className="text-muted-foreground max-w-xl leading-relaxed">
-            Open to user-facing product, Product Analyst, and AI quality roles in
+            Open to Software Tester, QA Engineer, and AI quality roles in
             Stockholm. Reach out — I&apos;d love to hear what you&apos;re building.
           </p>
           <div className="flex flex-wrap gap-x-8 gap-y-2 pt-2">

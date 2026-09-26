@@ -14,10 +14,10 @@ const experience = [
     location: "Stockholm",
     period: "Sep 2025 – Present",
     responsibilities: [
-      "Identifying business inefficiencies, evaluating possible AI and automation use cases, and translating them into practical, repeatable workflows using n8n, Python, and AI tooling",
-      "Prototyping with Claude Code, Gemini CLI, and Lovable to test ideas and gather evidence before committing to full builds, including through hackathons",
+      "Identifying, evaluating, testing, and deploying AI and automation use-cases, translating business inefficiencies into practical, repeatable workflow solutions using n8n, Python, and AI tooling",
       "Developed a PySpark + Spark-Expectations data quality pipeline on Swedish crime statistics (1950–2023), published under Data & AI Stockholm's GitHub org",
-      "Managing business operations end-to-end, including accounting, payments, marketing, and tax compliance",
+      "Rapidly prototyping solutions using Claude Code, Gemini CLI, and Lovable, testing and iterating fast to validate ideas before committing to full builds through hackathons",
+      "Managed all business operations end-to-end including accounting, payments, marketing, and tax compliance",
     ],
   },
   {
@@ -39,9 +39,10 @@ const experience = [
     location: "Stockholm",
     period: "Sep 2024 – Jan 2025",
     responsibilities: [
-      "Spoke with customers to understand how they wanted the AI avatar to sound and what it should teach learners, then translated those needs into structured prompts",
-      "Investigated AI avatar behavior across web and mobile, identified recurring failure patterns, and tracked issues to resolution through Asana",
-      "Worked within an Agile/Scrum team, participating in sprint planning, stand-ups, and retrospectives",
+      "Conducted testing of AI avatar applications across web and mobile (iOS), identifying failure patterns and tracking defects through to resolution in Asana",
+      "Worked within an Agile/Scrum team, participating in sprint planning, daily stand-ups, and retrospectives",
+      "Designed structured prompts to guide AI agents through complex scenarios (psychology, sales), ensuring outputs met both technical specifications and user expectations",
+      "Created the company website using Webflow",
     ],
   },
   {
@@ -51,9 +52,10 @@ const experience = [
     location: "Stockholm",
     period: "Sep 2023 – Jan 2024",
     responsibilities: [
-      "Prepared weekly status reports and followed up on project deliverables across multiple stakeholders",
-      "Supported project management, development leads, and test leads with ad hoc and ongoing tasks across functions",
-      "Built an Excel macro tool to automate identification of required master data updates",
+      "Developed and maintained test cases for SAP Fiori enterprise applications using Xray, improving test coverage and documentation across critical system workflows",
+      "Built VBScript automation scripts to validate 70K+ records, cutting validation time by 60% — adopted across the broader team as a standard process improvement",
+      "Collaborated with cross-functional teams to embed quality early, identifying integration issues before production",
+      "Worked within an Agile/Scrum team, participating in sprint planning, daily stand-ups, and retrospectives",
     ],
   },
   {
@@ -63,8 +65,9 @@ const experience = [
     location: "Walldorf, Germany",
     period: "Mar 2018 – Mar 2019",
     responsibilities: [
-      "Built and delivered a new internal web application using JavaScript, jQuery, and SAP UI5 — owning development and end-to-end testing",
+      "Built and delivered a new internal web application using JavaScript, jQuery, and SAP UI5",
       "Facilitated a coding workshop for management interns, translating technical concepts for a non-engineering audience",
+      "Worked within an Agile team with daily stand-ups and retrospectives",
     ],
   },
   {
@@ -74,9 +77,11 @@ const experience = [
     location: "Bengaluru, India",
     period: "Mar 2012 – Dec 2014",
     responsibilities: [
-      "Worked directly with enterprise client stakeholders (Bank of America) throughout end-to-end credit card processing projects, reviewing requirements and confirming readiness before each phase",
-      "Produced clear status reporting and documentation for senior client and internal stakeholders throughout multi-phase engagements",
-      "Delivered structured knowledge transfer, teaching Java to incoming team members as part of a formal skill-transfer initiative",
+      "Designed and executed test plans for end-to-end credit card flows (Bank of America) across functional, integration, regression, and UAT phases",
+      "Reviewed requirements and functional designs to confirm test readiness before each phase, identifying gaps early and preventing rework",
+      "Built automated test suites using Selenium, reducing regression cycles by 40% and achieving zero high/medium severity production defects",
+      "Set up and maintained test environments across multiple testing phases, ensuring stability for high-volume banking workflows",
+      "Produced clear test documentation and status reporting for senior stakeholders throughout the engagement",
     ],
   },
 ];

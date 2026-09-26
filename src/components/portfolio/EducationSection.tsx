@@ -4,7 +4,7 @@ const education = [
   {
     institution: "Offenburg University of Applied Sciences",
     location: "Offenburg, Germany",
-    degree: "MSc, Communication and Media Engineering",
+    degree: "MSc, Information Technology",
     period: "2016–2019",
   },
   {
