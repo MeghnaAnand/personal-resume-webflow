@@ -5,9 +5,9 @@ const skillCategories = [
     title: "User & Product Support",
     skills: [
       "Understanding user needs",
-      "Requirements review",
-      "Issue investigation",
-      "Feedback handling",
+      "Requirements analysis",
+      "Issue investigation & troubleshooting",
+      "Customer feedback handling",
       "Product validation",
     ],
   },
@@ -32,12 +32,13 @@ const skillCategories = [
     ],
   },
   {
-    title: "Quality & Validation",
+    title: "Quality & Testing",
     skills: [
-      "Functional testing",
-      "Regression testing",
-      "Exploratory testing",
-      "AI output analysis",
+      "Test planning & test cases",
+      "Functional & regression testing",
+      "UAT coordination",
+      "Selenium automation",
+      "AI output evaluation",
       "Defect tracking (Jira, Xray, Asana)",
     ],
   },
@@ -56,7 +57,7 @@ const skillCategories = [
 
 const SkillsSection = () => {
   return (
-    <EditorialSection label="Key Skills">
+    <EditorialSection label="Skills">
       <dl className="space-y-8">
         {skillCategories.map((cat) => (
           <div
