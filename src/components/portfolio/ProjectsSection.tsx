@@ -40,8 +40,8 @@ const ProjectsSection = () => {
         {projects.map((project) => {
           const Inner = (
             <>
-              <div className="flex items-start justify-between gap-4 mb-3">
-                <h3 className="text-2xl font-medium text-foreground group-hover:text-muted-foreground transition-colors flex items-center gap-2">
+              <div className="flex flex-col items-start gap-2 mb-3 sm:flex-row sm:justify-between sm:gap-4">
+                <h3 className="text-2xl font-medium text-foreground group-hover:text-muted-foreground transition-colors flex items-center gap-2 min-w-0">
                   {project.title}
                   {project.link && (
                     <ArrowUpRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
