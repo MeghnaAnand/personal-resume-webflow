@@ -14,10 +14,10 @@ const experience = [
     location: "Stockholm",
     period: "Sep 2025 – Present",
     responsibilities: [
-      "Identifying, evaluating, testing, and deploying AI and automation use-cases — translating business inefficiencies into practical, repeatable workflow solutions using n8n, Python, and AI tooling",
+      "Identifying business inefficiencies, evaluating possible AI and automation use cases, and translating them into practical, repeatable workflows using n8n, Python, and AI tooling",
+      "Prototyping with Claude Code, Gemini CLI, and Lovable to test ideas and gather evidence before committing to full builds, including through hackathons",
       "Developed a PySpark + Spark-Expectations data quality pipeline on Swedish crime statistics (1950–2023), published under Data & AI Stockholm's GitHub org",
-      "Rapidly prototyping with Claude Code, Gemini CLI, and Lovable — testing and iterating fast to validate ideas before committing to full builds, including through hackathons",
-      "Managed all business operations end-to-end including accounting, payments, marketing, and tax compliance, bringing the same systems thinking to operations as to product",
+      "Managing business operations end-to-end, including accounting, payments, marketing, and tax compliance",
     ],
   },
   {
@@ -27,9 +27,9 @@ const experience = [
     location: "Stockholm",
     period: "Jul 2025 – Jan 2026",
     responsibilities: [
-      "Maintaining relationships across a community of ~7,000 members, understanding what members and speakers needed to keep engagement and event quality high",
-      "Helped in event creation, management, and coordination, including monthly team meet-ups and post-event feedback handling",
-      "Involved in speaker outreach and communications, coordinating across internal organizers and external stakeholders",
+      "Maintained relationships across a community of approximately 7,000 members, listening to member and speaker needs to support engagement and event quality",
+      "Supported event creation and coordination, including monthly team meet-ups and handling post-event feedback",
+      "Coordinated speaker outreach and communication across internal organizers and external stakeholders",
     ],
   },
   {
@@ -39,8 +39,8 @@ const experience = [
     location: "Stockholm",
     period: "Sep 2024 – Jan 2025",
     responsibilities: [
-      "Involved in conversations with customers to understand their needs — how they wanted the AI avatar to sound and what it should teach learners — and translated that into structured prompt design",
-      "Conducted testing of AI avatar applications across web and mobile platforms, identifying failure patterns and tracking defects to resolution through Asana",
+      "Spoke with customers to understand how they wanted the AI avatar to sound and what it should teach learners, then translated those needs into structured prompts",
+      "Investigated AI avatar behavior across web and mobile, identified recurring failure patterns, and tracked issues to resolution through Asana",
       "Worked within an Agile/Scrum team, participating in sprint planning, stand-ups, and retrospectives",
     ],
   },
@@ -51,8 +51,8 @@ const experience = [
     location: "Stockholm",
     period: "Sep 2023 – Jan 2024",
     responsibilities: [
-      "Supported project management, development leads, and test leads with both ad hoc and continuous tasks, coordinating across functions in a fast-paced environment",
       "Prepared weekly status reports and followed up on project deliverables across multiple stakeholders",
+      "Supported project management, development leads, and test leads with ad hoc and ongoing tasks across functions",
       "Built an Excel macro tool to automate identification of required master data updates",
     ],
   },

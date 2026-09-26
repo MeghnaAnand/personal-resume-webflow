@@ -20,12 +20,12 @@ const HeroSection = () => {
         </h1>
 
         <p className="text-lg md:text-xl font-light text-muted-foreground leading-relaxed max-w-2xl">
-          Customer-facing professional with a QA and AI quality background. I work
-          directly with enterprise clients and stakeholders to understand what they
-          need and turn it into clear outcomes — from banking-critical systems at
-          Bank of America to AI product requirements gathered straight from customers.
-          I run my own AI consultancy and use n8n, Python, and AI tooling to create
-          leverage in everyday work.
+          Product-minded problem solver with 4+ years across customer-facing quality,
+          software delivery, and AI workflows. I turn user and stakeholder needs into
+          clear requirements, investigate what is not working, and communicate findings
+          so teams can improve products and processes. My experience spans enterprise
+          banking, retail, AI products, community operations, and hands-on work with
+          Lovable, Claude, n8n, Python, and data-quality tools.
         </p>
 
         <div className="flex flex-wrap items-center gap-x-3 gap-y-3 pt-2">
@@ -76,7 +76,7 @@ const HeroSection = () => {
         <dl className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-6 border-t border-border pt-10 mt-4">
           <div>
             <dt className="section-label mb-2">Experience</dt>
-            <dd className="text-lg font-medium text-foreground">5+ years</dd>
+            <dd className="text-lg font-medium text-foreground">4+ years</dd>
           </div>
           <div>
             <dt className="section-label mb-2">Based in</dt>

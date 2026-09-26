@@ -5,15 +5,15 @@ const projects = [
   {
     title: "LLM Evaluation Suite",
     description:
-      "Repeatable quality framework for AI document summarisation: a failure taxonomy that names how outputs go wrong, LLM-as-judge scoring against those categories, and structured test reporting so results are comparable run to run.",
-    tags: ["LLM evaluation", "Failure taxonomy", "Python", "Test reporting"],
+      "A repeatable way to identify patterns in AI document-summarisation failures, score outputs against defined categories, and report comparable findings across test runs.",
+    tags: ["Pattern analysis", "LLM evaluation", "Python", "Reporting"],
     link: null as string | null,
   },
   {
     title: "AutomationMind",
     badge: "2nd Prize · SheBuilds",
     description:
-      "Gamified automation learning platform — built and shipped end-to-end within the hackathon window.",
+      "A gamified product for learning automation, taken from idea to a working end-to-end experience within the hackathon window.",
     tags: ["Lovable", "React", "Lovable Cloud"],
     link: "https://github.com/MeghnaAnand/logic-loom-78",
   },
@@ -27,7 +27,7 @@ const projects = [
   {
     title: "FreshBox Chatbot",
     description:
-      "FastAPI customer-support chatbot (Ollama / llama3.2) with a scoring endpoint, Playwright UI tests, and an n8n pipeline that auto-evaluates bot responses from Google Sheets into Pass/Fail logs.",
+      "Customer-support chatbot with a scoring endpoint and an automated workflow that evaluates responses from Google Sheets into clear Pass/Fail logs.",
     tags: ["FastAPI", "Ollama", "Playwright", "n8n"],
     link: "https://github.com/MeghnaAnand/freshbox-chatbot",
   },
@@ -40,8 +40,8 @@ const ProjectsSection = () => {
         {projects.map((project) => {
           const Inner = (
             <>
-              <div className="flex items-start justify-between gap-4 mb-3">
-                <h3 className="text-2xl font-medium text-foreground group-hover:text-muted-foreground transition-colors flex items-center gap-2">
+              <div className="flex flex-col items-start gap-2 mb-3 sm:flex-row sm:justify-between sm:gap-4">
+                <h3 className="text-2xl font-medium text-foreground group-hover:text-muted-foreground transition-colors flex items-center gap-2 min-w-0">
                   {project.title}
                   {project.link && (
                     <ArrowUpRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
