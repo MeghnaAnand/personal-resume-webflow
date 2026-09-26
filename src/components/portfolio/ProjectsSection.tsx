@@ -35,7 +35,7 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <EditorialSection label="Selected Projects">
+    <EditorialSection label="Projects">
       <div className="space-y-12">
         {projects.map((project) => {
           const Inner = (

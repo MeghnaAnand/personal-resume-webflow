@@ -21,7 +21,7 @@ const recognitions = [
 
 const RecognitionSection = () => {
   return (
-    <EditorialSection label="Recognition & Programs">
+    <EditorialSection label="Certifications & Awards">
       <ul className="space-y-8">
         {recognitions.map((r) => (
           <li key={r.title} className="flex gap-6">
