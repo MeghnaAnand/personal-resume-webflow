@@ -83,7 +83,7 @@ const experience = [
 
 const ExperienceSection = () => {
   return (
-    <EditorialSection label="Experience">
+    <EditorialSection label="Work Experience">
       <Accordion type="multiple" className="space-y-0">
         {experience.map((job, idx) => (
           <AccordionItem
