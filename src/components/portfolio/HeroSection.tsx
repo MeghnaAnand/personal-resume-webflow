@@ -19,6 +19,10 @@ const HeroSection = () => {
           Meghna Anand
         </h1>
 
+        <p className="text-base md:text-lg font-medium tracking-wide text-foreground">
+          QA Engineer · Product Analyst · AI Quality Specialist
+        </p>
+
         <p className="text-lg md:text-xl font-light text-muted-foreground leading-relaxed max-w-2xl">
           Product-minded problem solver with 4+ years across customer-facing quality,
           software delivery, and AI workflows. I turn user and stakeholder needs into

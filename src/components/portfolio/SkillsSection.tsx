@@ -56,7 +56,7 @@ const skillCategories = [
 
 const SkillsSection = () => {
   return (
-    <EditorialSection label="Key Skills">
+    <EditorialSection label="Skills">
       <dl className="space-y-8">
         {skillCategories.map((cat) => (
           <div
